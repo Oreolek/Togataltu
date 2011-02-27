@@ -11,7 +11,7 @@ end
 #$source = Source.new("Dankon pro la mondkreintoj\nkiuj per heroestimo\ndonos al ni pliegigon\nlaux verkitaj plimensiloj.",@log)
 $source = Source.new("I ásked no óther thing,\nNo óther was deníed.\nI óffered Béing for it;\nThe míghty mérchant smíled.",@log)#Эмили Дикинсон
 #заметьте: в слове denied ударение на второй слог, в слове offered — на первый
-#$source.find_rhymes()
+$source.find_rhymes()
 $source.replace()
 result = $source.translate()
 if result != false then

@@ -32,18 +32,20 @@ class Source
     end #@text.each_line
   end
   def find_rhymes()
-   last_words = Array.new
+   this_line_number = 0
    @text.each_line do |line|
-    last_words << line[/([abcdefghijklmnopqrstuvwxyzáéíóúý]+\s[abcdefghijklmnopqrstuvwxyzáéíóúý]+)\W*$/, 1]  #массив двух последних слов строк
-   end
-   last_words.each_with_index do |word, word_index|
-    current_vowels = word.match(/([áéíóúý]).*([aeioy])*/)
-    last_words.each_with_index do |word2,word2_index|
-     vowels = word2.scan(/([áéíóúý]).*([aeioy])*/)
-     if vowels == current_vowels then
-      temp = word.gsub(/.*[áéíóúý]/,"")
+    this_line_number = this_line_number + 1
+    this_last_vowel = line.split.at(-1).scan(/[áéíóúý]/)
+    other_line_number = 0
+    @text.each_line do |line_other|
+     other_line_number = other_line_number + 1
+     if other_line_number == this_line_number then next end
+     other_last_vowel = line_other.split.at(-1).scan(/[áéíóúý]/)
+     if other_last_vowel = this_last_vowel then 
+      matched_vowels = 1
+      if line.split.at(-2).scan(/[áéíóúý]/) == line_other.split.at(-2).scan(/[áéíóúý]/) then matched_vowels = 2 end #можно сделать и так далее, но не стоит, наверное
+      @rhymed.push(""+this_line_number.to_s+" "+other_line_number.to_s+" "+matched_vowels.to_s)
      end
-     @rhymed.push(""+word_index.to_s+" "+word2_index.to_s+vowels.length.to_s+temp.length.to_s)
     end
    end
    @log << @rhymed.to_s
