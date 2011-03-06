@@ -8,10 +8,11 @@ class Source
     @log = log
     @translation = ""
     @pattern = ""
-    @rhymed = Array.new
+    @rhymed = Hash.new
     @@translated_words = Hash.new
     @@forms = Hash.new
     @text.each_line do |line|
+     if line.empty? then next end
      line.downcase.split.each do |word|
       vowels = word.count("aeioyuáéíóúý´")
       if (vowels==1) then #в односложных словах всё тривиально
@@ -35,20 +36,21 @@ class Source
    this_line_number = 0
    @text.each_line do |line|
     this_line_number = this_line_number + 1
-    this_last_vowel = line.split.at(-1).scan(/[áéíóúý]/)
+    this_last_vowel = line.split.at(-1).scan(/[áéíóúý]|\w´/)
     other_line_number = 0
     @text.each_line do |line_other|
      other_line_number = other_line_number + 1
      if other_line_number == this_line_number then next end
-     other_last_vowel = line_other.split.at(-1).scan(/[áéíóúý]/)
+     other_last_vowel = line_other.split.at(-1).scan(/[áéíóúý]|\w´/)
      if other_last_vowel = this_last_vowel then 
       matched_vowels = 1
-      if line.split.at(-2).scan(/[áéíóúý]/) == line_other.split.at(-2).scan(/[áéíóúý]/) then matched_vowels = 2 end #можно сделать и так далее, но не стоит, наверное
-      @rhymed.push(""+this_line_number.to_s+" "+other_line_number.to_s+" "+matched_vowels.to_s)
+      if line.split.at(-2).scan(/[áéíóúý]|\w´/) == line_other.split.at(-2).scan(/[áéíóúý]|\w´/) then matched_vowels = 2 end #можно сделать и так далее, но не стоит, наверное
+      if @rhymed[this_line_number].nil? then @rhymed[this_line_number] = Hash.new end
+      @rhymed[this_line_number][other_line_number] = matched_vowels
      end
     end
    end
-   @log << @rhymed.to_s
+#   @log << @rhymed.to_s
   end
   def replace()
     phrases = {
@@ -71,7 +73,7 @@ class Source
        word_translation = translator.process(word)
        if word_translation == true then next end
        if word_translation != false then
-        @@translated_words[word] = word_translation#.force_encoding("UTF-8")
+        @@translated_words[word] = word_translation
        else
         @log << "Перевод не удался. Прекращение работы."
         return false
@@ -104,8 +106,11 @@ class Source
    @log << @pattern
 ##############################################зд. надо взять каждое слово и получить его словоформы, а также проставить каждой словоформе ударение
 ##############################################затем устроить Большой Перебор по паттерну
+   line_number = 0
    @text.each_line do |line|
+   line_number = line_number + 1
    line.split.each do |word|
+   forms_ready = Array.new
    next if @@translated_words[word].nil?
    @pattern.split.each do |word_pattern|
     piece = ""
@@ -138,8 +143,65 @@ class Source
         piece << char
        end
        if (word_pattern == result) then
-        word = form
-        changed = true
+        forms_ready.push(form)
+       end
+      end
+      #@forms_ready теперь содержит все формы, подходящие по паттерну; проверим рифму
+      if line_number > 1 and (word == line.split.last or word == line.split.at(-2)) then
+       forms_ready.each do |form|
+        @rhymed[line_number][line_number..0].each_with_index do |number_of_vowels, line_index|
+	 piece = ""
+	 previous_vowel = ''
+	 line_vowel = ''
+	 form_vowel = ''
+	 i = 1
+	 found = false
+	 while i < number_of_vowels do
+	  @translation.split($/).at(line_index).split.at(-number_of_vowels).each_char do |char| #n-е слово рифмующейся строки перевода
+           if char =~ /[аеиоуыэюяё]/ then
+	    previous_vowel = char
+	    if piece =~ /[аеиоуыэюяё]/ then
+	     if check_piece(piece) == '!' then
+	      line_vowel = previous_vowel
+	      break
+	     end
+	    end
+	   end
+           piece << char
+	  end
+	  piece = ""
+	  form.each_char do |char|
+	   if char =~ /[аеиоуыэюяё]/ then
+	    previous_vowel = char
+	    if piece =~ /[аеиоуыэюяё]/ then
+	     if check_piece(piece) == '!' then
+	      form_vowel = previous_vowel
+	      break
+	     end
+	    end
+	   end
+           piece << char
+	  end
+	  if line_vowel != form_vowel then 
+	   found = false
+	   break
+	  else
+	   if i == number_of_vowels-1 then
+	    word = form
+	    found = true
+	    break
+	   end
+	  end
+	  if (found == true) then break end
+	  i = i + 1
+	 end #end while
+	end
+       end
+      else
+       if forms_ready.size == 0 then changed = false
+       else
+        word = forms_ready[rand(forms_ready.size)]
+	changed = true
        end
       end
       if not changed then word = @@forms[word][rand(@@forms[word].size)] end #если форма не подобрана, ставим наугад — чтобы не потерять слово
@@ -379,9 +441,11 @@ class Source
    if probability_no[piece].nil? then probability_no[piece] = 0 end
    if (probability_acute_sec[piece] + probability_acute[piece] - probability_no[piece]>0) then
     if (probability_acute_sec[piece] > probability_acute[piece]) then
-     return 'П'
+     return '!'
+#     return 'П'
     else
-     return 'У'
+     return '!'
+     #return 'У'
     end
    end
    return '-'

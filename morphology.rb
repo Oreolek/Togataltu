@@ -12,7 +12,7 @@ class Morphology
   #returning = res.body.scan(/<li>(\w+)<\/li>/)
   #if returning.empty? then return false end
   #return returning
-  res = %x[php phpmorphy/cli.php "#{word}"]
+  res = %x[php phpmorphy/cli.php "#{word}"].encode("UTF-8")
   if res.match("Error") then return false end
   return res.split(", ")
  end

@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 #encoding: utf-8
 require 'net/http'
+require 'cgi'
 $use_internet = true # Интернет пока что даёт _намного_ лучшие результаты
 class Translator
  def initialize (log)
@@ -17,6 +18,7 @@ class Translator
     $use_internet = false
     return process(word)
    end
+   res.body = CGI.unescapeHTML(res.body)
    res.body.match(/RU.*<seg>(.*)<\/seg>/m)
    temp = $1
    # Если вернули больше одного слова — берём первое. Это чтобы целыми фразами не оперировать, транслятор может быть эпически туп.
@@ -113,6 +115,7 @@ class Translator
 #    @log << @translated_words[word]
 #   end
 #  end
+  if @translation != false then @translation.force_encoding("UTF-8") end
   return @translation
  end
 end
