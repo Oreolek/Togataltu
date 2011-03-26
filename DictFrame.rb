@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #encoding: utf-8
-class WordFrame < Frame
+class DictFrame < Frame
  def initialize(title)
   super( nil, :title => title, :size => [800, 200] )
   sizer_add_word = BoxSizer.new(Wx::HORIZONTAL)

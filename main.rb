@@ -10,6 +10,8 @@ $:.unshift File.dirname(__FILE__)
 require "source.rb"
 include Wx
 require "WordFrame"
+require "DictFrame"
+
  class MainFrame < Frame
    ID_EDIT_DICTIONARY = Wx::ID_HIGHEST+1
    ID_ADD_WORD = Wx::ID_HIGHEST+1
@@ -57,7 +59,6 @@ require "WordFrame"
      evt_button(button_start.get_id, :on_start)
      @opendialog = Wx::FileDialog.new(nil,"Открыть файл")
      @savedialog = Wx::FileDialog.new(nil,"Открыть файл",:style => Wx::FD_SAVE | Wx::FD_OVERWRITE_PROMPT)
-     @frame_add = WordFrame.new('Добавление слова в словарь')
    end
    def on_quit
      close
@@ -94,7 +95,7 @@ require "WordFrame"
      @translation.clear()
      @log << "\nФайл закрыт."
      @frame_add.destroy()
-     self.dispose()
+     self.destroy()
    end
    def on_save
      if @savedialog.show_modal == Wx::ID_OK
@@ -103,8 +104,11 @@ require "WordFrame"
      end
    end
    def on_edit_dictionary
+    @frame_edit = DictFrame.new('Редактирование словаря')
+    @frame_edit.show
    end
    def on_add_word
+    @frame_add = WordFrame.new('Добавление слова в словарь')
     @frame_add.show
    end
  end
