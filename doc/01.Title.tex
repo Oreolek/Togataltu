@@ -1,0 +1,53 @@
+\usepackage[T2A]{fontenc}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\defaultfontfeatures{Mapping=tex-text, Scale=MatchLowercase}
+\setmainfont{FreeSerif}
+\newfontfamily{\cyrillicfont}{FreeSerif}
+\setromanfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\frenchspacing
+\usepackage[labelsep=period]{caption}
+\usepackage{indentfirst}
+
+\usepackage{fncychap}
+\ChNameVar{\large}
+\ChTitleVar{\Large \rm \bfseries}
+\ChNameUpperCase
+
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{2}
+
+\usepackage{geometry}
+\geometry{left=3cm}
+\geometry{right=2cm}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+
+\marginparwidth=0cm
+
+\renewcommand{\theenumi}{\arabic{enumi}.}
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+\renewcommand{\theenumii}{\arabic{enumii}.}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+\renewcommand{\theenumiii}{\arabic{enumiii}.}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}
+
+\renewcommand{\baselinestretch}{1.5}
+\righthyphenmin=2
+
+\pagestyle{myheadings}
+
+\begin{document}
+\title{Документация системы «Тогаталту»}
+\author{Oreolek}
+\maketitle
+
+\renewcommand{\contentsname}{Содержание}
+\setlength{\parskip}{0ex plus 0.5ex minus 0.2ex}
+\tableofcontents
+\clearpage
