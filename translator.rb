@@ -10,7 +10,7 @@ class Translator
  end
  def process(word)
   if ($use_internet) then
-   req = Net::HTTP::Get.new('http://mymemory.translated.net/api/get?q='+word+'&langpair=en|ru&of=tmx')
+   req = Net::HTTP::Get.new('http://mymemory.translated.net/api/get?q='+CGI.escape(word)+'&langpair=en|ru&of=tmx')
    begin
     res = Net::HTTP.start('mymemory.translated.net',80) {|http|http.request(req)}
    rescue SocketError,Timeout::Error
@@ -19,7 +19,7 @@ class Translator
     return process(word)
    end
    res.body = CGI.unescapeHTML(res.body)
-   res.body.match(/RU.*<seg>(.*)<\/seg>/m)
+   res.body.match((/RU.*\s*<seg>(.*)<\/seg>/))
    temp = $1
    # Если вернули больше одного слова — берём первое. Это чтобы целыми фразами не оперировать, транслятор может быть эпически туп.
    temp.gsub!(/&\w*;/,"")

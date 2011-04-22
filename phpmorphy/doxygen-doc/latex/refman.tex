@@ -1,0 +1,185 @@
+\documentclass[a4paper]{book}
+\usepackage{a4wide}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large phpmorphy }\\
+\vspace*{1cm}
+{\large Создано системой Doxygen 1.7.1}\\
+\vspace*{0.5cm}
+{\small Wed Mar 23 2011 08:34:27}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+\chapter{Алфавитный указатель классов}
+\input{hierarchy}
+\chapter{Алфавитный указатель классов}
+\input{annotated}
+\chapter{Список файлов}
+\input{files}
+\chapter{Классы}
+\input{classphpMorphy}
+\input{classphpMorphy__AncodesResolver__AsIs}
+\input{interfacephpMorphy__AncodesResolver__Interface}
+\input{classphpMorphy__AncodesResolver__Proxy}
+\input{classphpMorphy__AncodesResolver__ToDialingAncodes}
+\input{classphpMorphy__AncodesResolver__ToText}
+\input{classphpMorphy__AnnotDecoder__Base}
+\input{classphpMorphy__AnnotDecoder__Common}
+\input{classphpMorphy__AnnotDecoder__Factory}
+\input{interfacephpMorphy__AnnotDecoder__Interface}
+\input{classphpMorphy__AnnotDecoder__Predict}
+\input{classphpMorphy__Exception}
+\input{classphpMorphy__Fsa}
+\input{classphpMorphy__Fsa__Decorator}
+\input{interfacephpMorphy__Fsa__Interface}
+\input{classphpMorphy__Fsa__Proxy}
+\input{classphpMorphy__Fsa__Sparse__File}
+\input{classphpMorphy__Fsa__Sparse__Mem}
+\input{classphpMorphy__Fsa__Sparse__Shm}
+\input{classphpMorphy__Fsa__Tree__File}
+\input{classphpMorphy__Fsa__Tree__Mem}
+\input{classphpMorphy__Fsa__Tree__Shm}
+\input{classphpMorphy__Fsa__WordsCollector}
+\input{classphpMorphy__GramInfo}
+\input{classphpMorphy__GramInfo__AncodeCache}
+\input{classphpMorphy__GramInfo__Decorator}
+\input{classphpMorphy__Graminfo__File}
+\input{interfacephpMorphy__GramInfo__Interace}
+\input{classphpMorphy__Graminfo__Mem}
+\input{classphpMorphy__GramInfo__Proxy}
+\input{classphpMorphy__GramInfo__Proxy__WithHeader}
+\input{classphpMorphy__GramInfo__RuntimeCaching}
+\input{classphpMorphy__Graminfo__Shm}
+\input{classphpMorphy__GrammemsProvider__Base}
+\input{classphpMorphy__GrammemsProvider__Decorator}
+\input{classphpMorphy__GrammemsProvider__Empty}
+\input{classphpMorphy__GrammemsProvider__Factory}
+\input{classphpMorphy__GrammemsProvider__ForFactory}
+\input{interfacephpMorphy__GrammemsProvider__Interface}
+\input{classphpMorphy__GrammemsProvider__ru__RU}
+\input{classphpMorphy__GramTab}
+\input{classphpMorphy__GramTab__Empty}
+\input{interfacephpMorphy__GramTab__Interface}
+\input{classphpMorphy__GramTab__Proxy}
+\input{classphpMorphy__Link}
+\input{classphpMorphy__Link__Annot}
+\input{classphpMorphy__Link__Base}
+\input{classphpMorphy__Morphier__Base}
+\input{classphpMorphy__Morphier__Bulk}
+\input{classphpMorphy__Morphier__Common}
+\input{classphpMorphy__Morphier__Empty}
+\input{classphpMorphy__Morphier__Finder__Base}
+\input{classphpMorphy__Morphier__Finder__Common}
+\input{interfacephpMorphy__Morphier__Finder__Interface}
+\input{classphpMorphy__Morphier__Finder__Predict__Databse}
+\input{classphpMorphy__Morphier__Finder__Predict__Suffix}
+\input{classphpMorphy__Morphier__Helper}
+\input{interfacephpMorphy__Morphier__Interface}
+\input{classphpMorphy__Morphier__Predict__Database}
+\input{classphpMorphy__Morphier__Predict__Suffix}
+\input{classphpMorphy__Morphier__PredictCollector}
+\input{classphpMorphy__Semaphore}
+\input{classphpMorphy__Semaphore__Empty}
+\input{classphpMorphy__Semaphore__Nix}
+\input{classphpMorphy__Semaphore__Win}
+\input{classphpMorphy__Shm__Cache}
+\input{classphpMorphy__Shm__Cache__FileDescriptor}
+\input{interfacephpMorphy__Shm__Cache__Interface}
+\input{classphpMorphy__Shm__Header}
+\input{classphpMorphy__Source__Dba}
+\input{classphpMorphy__Source__Fsa}
+\input{interfacephpMorphy__Source__Interface}
+\input{classphpMorphy__State}
+\input{classphpMorphy__Storage}
+\input{classphpMorphy__Storage__Factory}
+\input{classphpMorphy__Storage__File}
+\input{classphpMorphy__Storage__Mem}
+\input{classphpMorphy__Storage__Proxy}
+\input{classphpMorphy__Storage__Shm}
+\input{classphpMorphy__UnicodeHelper}
+\input{classphpMorphy__UnicodeHelper__Base}
+\input{classphpMorphy__UnicodeHelper__MultiByteFixed}
+\input{classphpMorphy__UnicodeHelper__singlebyte}
+\input{classphpMorphy__UnicodeHelper__ucs__2be}
+\input{classphpMorphy__UnicodeHelper__ucs__2le}
+\input{classphpMorphy__UnicodeHelper__ucs__4be}
+\input{classphpMorphy__UnicodeHelper__ucs__4le}
+\input{classphpMorphy__UnicodeHelper__utf__16__Base}
+\input{classphpMorphy__UnicodeHelper__utf__16be}
+\input{classphpMorphy__UnicodeHelper__utf__16le}
+\input{classphpMorphy__UnicodeHelper__utf__32__Base}
+\input{classphpMorphy__UnicodeHelper__utf__32be}
+\input{classphpMorphy__UnicodeHelper__utf__32le}
+\input{classphpMorphy__UnicodeHelper__utf__8}
+\input{classphpMorphy__WordDescriptor}
+\input{classphpMorphy__WordDescriptor__Collection}
+\input{classphpMorphy__WordDescriptor__Collection__Serializer}
+\input{classphpMorphy__WordForm}
+\chapter{Файлы}
+\input{common_8php}
+\input{langs__stuff_2common_8php}
+\input{fsa__sparse__file_8php}
+\input{fsa__sparse__mem_8php}
+\input{fsa__sparse__shm_8php}
+\input{fsa__tree__file_8php}
+\input{fsa__tree__mem_8php}
+\input{fsa__tree__shm_8php}
+\input{fsa_8php}
+\input{fsa__state_8php}
+\input{graminfo__file_8php}
+\input{graminfo__mem_8php}
+\input{graminfo__shm_8php}
+\input{graminfo_8php}
+\input{gramtab_8php}
+\input{gramtab__consts_8php}
+\input{ru__ru_8php}
+\input{morphiers_8php}
+\input{shm__utils_8php}
+\input{source_8php}
+\input{storage_8php}
+\input{unicode_8php}
+\printindex
+\end{document}

@@ -1,0 +1,216 @@
+\hypertarget{classphpMorphy__Fsa__Decorator}{
+\section{Класс phpMorphy\_\-Fsa\_\-Decorator}
+\label{classphpMorphy__Fsa__Decorator}\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+}
+Граф наследования:phpMorphy\_\-Fsa\_\-Decorator:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classphpMorphy__Fsa__Decorator}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_abbcea7adce8a2b7c6708cdc023d91562}{phpMorphy\_\-Fsa\_\-Decorator} (\hyperlink{interfacephpMorphy__Fsa__Interface}{phpMorphy\_\-Fsa\_\-Interface} \$fsa)
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_a6f57e120a5763deda17bdb5f96a01290}{getRootTrans} ()
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_a49ee10a47a3d3be7782ec31b97da357d}{getRootState} ()
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_ab817952e793cdb42668409b761758975}{getAlphabet} ()
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_aa67e667c49cbfc163c885bf3cc9a448d}{getAnnot} (\$trans)
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_a18393b870712e635c13c9f18780311e9}{walk} (\$start, \$word, \$readAnnot=true)
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_a207b7b3f35c2eb0d5e23905a02ed5e3d}{collect} (\$start, \$callback, \$readAnnot=true, \$path= '')
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_ae7a286424b3d2d24eb0b64fa2621d83f}{readState} (\$index)
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_a4bdcae49dab742086c961f73e0380254}{unpackTranses} (\$transes)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Fsa__Decorator_a7bcd4f34b632c4ed8c8303f0b88408e5}{\$fsa}
+\end{DoxyCompactItemize}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy__Fsa__Decorator_a207b7b3f35c2eb0d5e23905a02ed5e3d}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!collect@{collect}}
+\index{collect@{collect}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{collect}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::collect (
+\begin{DoxyParamCaption}
+\item[{\$}]{ startNode, }
+\item[{\$}]{ callback, }
+\item[{\$}]{ readAnnot = {\ttfamily true}, }
+\item[{\$}]{ path = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_a207b7b3f35c2eb0d5e23905a02ed5e3d}
+Traverse automat and collect words For each found words \$callback function invoked with follow arguments: call\_\-user\_\-func(\$callback, \$word, \$annot) when \$readAnnot is FALSE then \$annot arg is always NULL
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$startNode \item[{\em mixed}]\$callback callback function(in php format callback i.e. string or array(obj, method) or array(class, method) \item[{\em bool}]\$readAnnot read annot \item[{\em string}]\$path string to be append to all words \end{DoxyParams}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_a256ec25980bdb3d5275374225c6ef183}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa__Decorator_ab817952e793cdb42668409b761758975}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!getAlphabet@{getAlphabet}}
+\index{getAlphabet@{getAlphabet}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{getAlphabet}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::getAlphabet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_ab817952e793cdb42668409b761758975}
+Returns alphabet i.e. all chars used in automat \begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_aebc9b423323d338941a5256d5dedf344}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa__Decorator_aa67e667c49cbfc163c885bf3cc9a448d}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!getAnnot@{getAnnot}}
+\index{getAnnot@{getAnnot}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{getAnnot}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::getAnnot (
+\begin{DoxyParamCaption}
+\item[{\$}]{ trans}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_aa67e667c49cbfc163c885bf3cc9a448d}
+Return annotation for given transition(if annotation flag is set for given trans)
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em array}]\$trans \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+string 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_a6869cabce7a226247cc451b8e85cd4cf}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa__Decorator_a49ee10a47a3d3be7782ec31b97da357d}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!getRootState@{getRootState}}
+\index{getRootState@{getRootState}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{getRootState}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::getRootState (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_a49ee10a47a3d3be7782ec31b97da357d}
+Returns root state object \begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_afc4bb4e25ae2dbd8fe2d1ff199c71020}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa__Decorator_a6f57e120a5763deda17bdb5f96a01290}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!getRootTrans@{getRootTrans}}
+\index{getRootTrans@{getRootTrans}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{getRootTrans}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::getRootTrans (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_a6f57e120a5763deda17bdb5f96a01290}
+Return root transition of fsa \begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_a4d3a622efd660bb180073ff6ac2526bd}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa__Decorator_abbcea7adce8a2b7c6708cdc023d91562}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{phpMorphy\_\-Fsa\_\-Decorator}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::phpMorphy\_\-Fsa\_\-Decorator (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Fsa\_\-Interface} \$}]{ fsa}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_abbcea7adce8a2b7c6708cdc023d91562}
+\hypertarget{classphpMorphy__Fsa__Decorator_ae7a286424b3d2d24eb0b64fa2621d83f}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!readState@{readState}}
+\index{readState@{readState}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{readState}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::readState (
+\begin{DoxyParamCaption}
+\item[{\$}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_ae7a286424b3d2d24eb0b64fa2621d83f}
+Read state at given index
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em int}]\$index \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_adc761163b59286b33dec722702d227d3}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa__Decorator_a4bdcae49dab742086c961f73e0380254}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!unpackTranses@{unpackTranses}}
+\index{unpackTranses@{unpackTranses}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{unpackTranses}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::unpackTranses (
+\begin{DoxyParamCaption}
+\item[{\$}]{ rawTranses}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_a4bdcae49dab742086c961f73e0380254}
+Unpack transition from binary form to array
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$rawTranses may be array for convert more than one transitions \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_a103abeef01d8e75da765fdd533a6dc00}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa__Decorator_a18393b870712e635c13c9f18780311e9}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!walk@{walk}}
+\index{walk@{walk}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{walk}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::walk (
+\begin{DoxyParamCaption}
+\item[{\$}]{ trans, }
+\item[{\$}]{ word, }
+\item[{\$}]{ readAnnot = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa__Decorator_a18393b870712e635c13c9f18780311e9}
+Find word in automat
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$trans starting transition \item[{\em string}]\$word \item[{\em bool}]\$readAnnot read annot or simple check if word exists in automat \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+bool TRUE if word is found, FALSE otherwise 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_a6e249e8e54705e4c1d9399ff0e491ce0}{phpMorphy\_\-Fsa\_\-Interface}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy__Fsa__Decorator_a7bcd4f34b632c4ed8c8303f0b88408e5}{
+\index{phpMorphy\_\-Fsa\_\-Decorator@{phpMorphy\_\-Fsa\_\-Decorator}!\$fsa@{\$fsa}}
+\index{\$fsa@{\$fsa}!phpMorphy_Fsa_Decorator@{phpMorphy\_\-Fsa\_\-Decorator}}
+\subsubsection[{\$fsa}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Decorator::\$fsa\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa__Decorator_a7bcd4f34b632c4ed8c8303f0b88408e5}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+fsa/\hyperlink{fsa_8php}{fsa.php}\end{DoxyCompactItemize}

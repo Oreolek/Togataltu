@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>phpmorphy: Класс phpMorphy_UnicodeHelper</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&nbsp;указатель&nbsp;классов</span></a></li>
+      <li><a href="hierarchy.html"><span>Иерархия&nbsp;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&nbsp;классов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-static-methods">Защищенные статические члены</a> &#124;
+<a href="#pro-static-attribs">Статические защищенные данные</a>  </div>
+  <div class="headertitle">
+<h1>Класс phpMorphy_UnicodeHelper</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="phpMorphy_UnicodeHelper" --><div class="dynheader">
+Граф наследования:phpMorphy_UnicodeHelper:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classphpMorphy__UnicodeHelper.png" usemap="#phpMorphy_UnicodeHelper_map" alt=""/>
+  <map id="phpMorphy_UnicodeHelper_map" name="phpMorphy_UnicodeHelper_map">
+<area href="classphpMorphy__UnicodeHelper__Base.html" alt="phpMorphy_UnicodeHelper_Base" shape="rect" coords="1139,56,1397,80"/>
+<area href="classphpMorphy__UnicodeHelper__MultiByteFixed.html" alt="phpMorphy_UnicodeHelper_MultiByteFixed" shape="rect" coords="536,112,794,136"/>
+<area href="classphpMorphy__UnicodeHelper__singlebyte.html" alt="phpMorphy_UnicodeHelper_singlebyte" shape="rect" coords="804,112,1062,136"/>
+<area href="classphpMorphy__UnicodeHelper__utf__16__Base.html" alt="phpMorphy_UnicodeHelper_utf_16_Base" shape="rect" coords="1474,112,1732,136"/>
+<area href="classphpMorphy__UnicodeHelper__utf__8.html" alt="phpMorphy_UnicodeHelper_utf_8" shape="rect" coords="1742,112,2000,136"/>
+<area href="classphpMorphy__UnicodeHelper__ucs__2be.html" alt="phpMorphy_UnicodeHelper_ucs_2be" shape="rect" coords="0,168,258,192"/>
+<area href="classphpMorphy__UnicodeHelper__ucs__2le.html" alt="phpMorphy_UnicodeHelper_ucs_2le" shape="rect" coords="268,168,526,192"/>
+<area href="classphpMorphy__UnicodeHelper__ucs__4be.html" alt="phpMorphy_UnicodeHelper_ucs_4be" shape="rect" coords="536,168,794,192"/>
+<area href="classphpMorphy__UnicodeHelper__ucs__4le.html" alt="phpMorphy_UnicodeHelper_ucs_4le" shape="rect" coords="804,168,1062,192"/>
+<area href="classphpMorphy__UnicodeHelper__utf__32__Base.html" alt="phpMorphy_UnicodeHelper_utf_32_Base" shape="rect" coords="1072,168,1330,192"/>
+<area href="classphpMorphy__UnicodeHelper__utf__16be.html" alt="phpMorphy_UnicodeHelper_utf_16be" shape="rect" coords="1340,168,1598,192"/>
+<area href="classphpMorphy__UnicodeHelper__utf__16le.html" alt="phpMorphy_UnicodeHelper_utf_16le" shape="rect" coords="1608,168,1866,192"/>
+<area href="classphpMorphy__UnicodeHelper__utf__32be.html" alt="phpMorphy_UnicodeHelper_utf_32be" shape="rect" coords="938,224,1196,248"/>
+<area href="classphpMorphy__UnicodeHelper__utf__32le.html" alt="phpMorphy_UnicodeHelper_utf_32le" shape="rect" coords="1206,224,1464,248"/>
+</map>
+</div>
+
+<p><a href="classphpMorphy__UnicodeHelper-members.html">Полный список членов класса</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphpMorphy__UnicodeHelper.html#a43c6ff5dc83daaa1d9cef12e3250f2c5">firstCharSize</a> ($str)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphpMorphy__UnicodeHelper.html#a0802c954bf8d6866fe85729ce8ef2df5">strrev</a> ($str)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphpMorphy__UnicodeHelper.html#ae8f19dea596da693c343df0f2d416acf">strlen</a> ($str)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphpMorphy__UnicodeHelper.html#a9734660369e07a3b5a0f1572ff0a0ae0">fixTrailing</a> ($str)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphpMorphy__UnicodeHelper.html#a87737cb9e16657db329f37660e47f20c">create</a> ($encoding)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-static-methods"></a>
+Защищенные статические члены</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphpMorphy__UnicodeHelper.html#a62a9b832056bb7b3ec9358ec78151243">doCreate</a> ($encoding)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
+Статические защищенные данные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphpMorphy__UnicodeHelper.html#aef395c109d8ab5539e79f5fbb90268fc">$cache</a> = array()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>This file is part of <a class="el" href="classphpMorphy.html">phpMorphy</a> library</p>
+<p>Copyright c 2007-2008 Kamaev Vladimir &lt;<a href="mailto:heromantor@users.sourceforge.net">heromantor@users.sourceforge.net</a>&gt;</p>
+<p>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+<p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA. </p>
+<hr/><h2>Методы</h2>
+<a class="anchor" id="a87737cb9e16657db329f37660e47f20c"></a><!-- doxytag: member="phpMorphy_UnicodeHelper::create" ref="a87737cb9e16657db329f37660e47f20c" args="($encoding)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static phpMorphy_UnicodeHelper::create </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>encoding</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62a9b832056bb7b3ec9358ec78151243"></a><!-- doxytag: member="phpMorphy_UnicodeHelper::doCreate" ref="a62a9b832056bb7b3ec9358ec78151243" args="($encoding)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static phpMorphy_UnicodeHelper::doCreate </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>encoding</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a43c6ff5dc83daaa1d9cef12e3250f2c5"></a><!-- doxytag: member="phpMorphy_UnicodeHelper::firstCharSize" ref="a43c6ff5dc83daaa1d9cef12e3250f2c5" args="($str)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">phpMorphy_UnicodeHelper::firstCharSize </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>str</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [abstract]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classphpMorphy__UnicodeHelper__MultiByteFixed.html#a8ab5d36a37071cb426f315100596a237">phpMorphy_UnicodeHelper_MultiByteFixed</a>, <a class="el" href="classphpMorphy__UnicodeHelper__singlebyte.html#a0b762a514e2f994af73c3295239ac138">phpMorphy_UnicodeHelper_singlebyte</a>, <a class="el" href="classphpMorphy__UnicodeHelper__utf__8.html#a2028748f79c9b3f1d74a577bd2cc0dba">phpMorphy_UnicodeHelper_utf_8</a> и <a class="el" href="classphpMorphy__UnicodeHelper__utf__16__Base.html#a31ad402bbf731c6cbb0a31edd5c8ffcf">phpMorphy_UnicodeHelper_utf_16_Base</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9734660369e07a3b5a0f1572ff0a0ae0"></a><!-- doxytag: member="phpMorphy_UnicodeHelper::fixTrailing" ref="a9734660369e07a3b5a0f1572ff0a0ae0" args="($str)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">phpMorphy_UnicodeHelper::fixTrailing </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>str</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [abstract]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classphpMorphy__UnicodeHelper__MultiByteFixed.html#a5592c7e7efb44f379e6cfeb591a66a0f">phpMorphy_UnicodeHelper_MultiByteFixed</a>, <a class="el" href="classphpMorphy__UnicodeHelper__singlebyte.html#ab1f5cc0817d3527659b26149ed77da0d">phpMorphy_UnicodeHelper_singlebyte</a>, <a class="el" href="classphpMorphy__UnicodeHelper__utf__8.html#a7cddcf292f6804a936b25bf5e20b2913">phpMorphy_UnicodeHelper_utf_8</a> и <a class="el" href="classphpMorphy__UnicodeHelper__utf__16__Base.html#a0ff2ad65ba2b5b65971e37a9116aa3bb">phpMorphy_UnicodeHelper_utf_16_Base</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8f19dea596da693c343df0f2d416acf"></a><!-- doxytag: member="phpMorphy_UnicodeHelper::strlen" ref="ae8f19dea596da693c343df0f2d416acf" args="($str)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">phpMorphy_UnicodeHelper::strlen </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>str</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [abstract]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classphpMorphy__UnicodeHelper__Base.html#afa54f68ea468297e6e4d75f5e95f85e7">phpMorphy_UnicodeHelper_Base</a> и <a class="el" href="classphpMorphy__UnicodeHelper__singlebyte.html#a7ed10bd2d30a9503a0be9a114ededaeb">phpMorphy_UnicodeHelper_singlebyte</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0802c954bf8d6866fe85729ce8ef2df5"></a><!-- doxytag: member="phpMorphy_UnicodeHelper::strrev" ref="a0802c954bf8d6866fe85729ce8ef2df5" args="($str)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">phpMorphy_UnicodeHelper::strrev </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>str</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [abstract]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classphpMorphy__UnicodeHelper__MultiByteFixed.html#a3b126f472ad5111f12be0f809d6edd76">phpMorphy_UnicodeHelper_MultiByteFixed</a>, <a class="el" href="classphpMorphy__UnicodeHelper__singlebyte.html#a1433c9be679be77aea622bc5df221d7d">phpMorphy_UnicodeHelper_singlebyte</a>, <a class="el" href="classphpMorphy__UnicodeHelper__utf__8.html#a8212e8178dbb13c8a3ce05fbaab94bb8">phpMorphy_UnicodeHelper_utf_8</a> и <a class="el" href="classphpMorphy__UnicodeHelper__utf__16__Base.html#af406da7ce4e7c4eb67534465d3df4801">phpMorphy_UnicodeHelper_utf_16_Base</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Данные класса</h2>
+<a class="anchor" id="aef395c109d8ab5539e79f5fbb90268fc"></a><!-- doxytag: member="phpMorphy_UnicodeHelper::$cache" ref="aef395c109d8ab5539e79f5fbb90268fc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">phpMorphy_UnicodeHelper::$cache = array()<code> [static, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="unicode_8php.html">unicode.php</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Перечисления</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по phpmorphy. Последние изменения: Wed Mar 23 2011 08:34:43. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

@@ -1,0 +1,242 @@
+\hypertarget{classphpMorphy__GramTab}{
+\section{Класс phpMorphy\_\-GramTab}
+\label{classphpMorphy__GramTab}\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}}
+}
+Граф наследования:phpMorphy\_\-GramTab:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classphpMorphy__GramTab}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__GramTab_acd339c0158bf69afdfd00ba2273a3722}{getGrammems} (\$ancodeId)
+\item 
+\hyperlink{classphpMorphy__GramTab_a8aa97495600e8fbd6dc534365b9145e5}{getPartOfSpeech} (\$ancodeId)
+\item 
+\hyperlink{classphpMorphy__GramTab_afa99b6301598d6b60a22e63647ff24d4}{resolveGrammemIds} (\$ids)
+\item 
+\hyperlink{classphpMorphy__GramTab_aa71f3a190c26fe9a938d90e0000ae6d0}{resolvePartOfSpeechId} (\$id)
+\item 
+\hyperlink{classphpMorphy__GramTab_a5a78efa117530fa256f1f49f6afe56b4}{includeConsts} ()
+\item 
+\hyperlink{classphpMorphy__GramTab_af7a41bb82bab87ea12b2abed4dfde274}{ancodeToString} (\$ancodeId, \$commonAncode=null)
+\item 
+\hyperlink{classphpMorphy__GramTab_a1f411dd80d6c23355b31fc01c8159bef}{stringToAncode} (\$string)
+\item 
+\hyperlink{classphpMorphy__GramTab_ac8bfd7100deebdcce34318a164f46cb6}{toString} (\$partOfSpeechId, \$grammemIds)
+\item 
+\hyperlink{classphpMorphy__GramTab_ace1570d2435c1e482a976e28c73d93fd}{\_\-\_\-get} (\$propName)
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classphpMorphy__GramTab_a8ab58c6d46b68c699ed14492d2c3a83e}{create} (\hyperlink{classphpMorphy__Storage}{phpMorphy\_\-Storage} \$storage)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__GramTab_aa72b375f4aaac168f97e24d24158be3c}{\_\-\_\-construct} (\hyperlink{classphpMorphy__Storage}{phpMorphy\_\-Storage} \$storage)
+\item 
+\hyperlink{classphpMorphy__GramTab_ad08c1d9640b2a026626758a399008e47}{findAncode} (\$partOfSpeech, \$grammems)
+\item 
+\hyperlink{classphpMorphy__GramTab_aa686e51e38e38d36453c710cabacba69}{buildAncodesMap} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__GramTab_ab0d2cee21fc1c75117cd794b493472b6}{\$data}
+\item 
+\hyperlink{classphpMorphy__GramTab_a6aeaac9d03957bd2724991f4bbcad082}{\$ancodes}
+\item 
+\hyperlink{classphpMorphy__GramTab_af618e178ed9eff879c73ec4ad05bfd78}{\$grammems}
+\item 
+\hyperlink{classphpMorphy__GramTab_a9dc10f87d1b6ff4f1e6e8bc3a17b9535}{\$poses}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classphpMorphy__GramTab_aa72b375f4aaac168f97e24d24158be3c}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Storage} \$}]{ storage}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__GramTab_aa72b375f4aaac168f97e24d24158be3c}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy__GramTab_ace1570d2435c1e482a976e28c73d93fd}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!\_\-\_\-get@{\_\-\_\-get}}
+\index{\_\-\_\-get@{\_\-\_\-get}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{\_\-\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::\_\-\_\-get (
+\begin{DoxyParamCaption}
+\item[{\$}]{ propName}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_ace1570d2435c1e482a976e28c73d93fd}
+\hypertarget{classphpMorphy__GramTab_af7a41bb82bab87ea12b2abed4dfde274}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!ancodeToString@{ancodeToString}}
+\index{ancodeToString@{ancodeToString}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{ancodeToString}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::ancodeToString (
+\begin{DoxyParamCaption}
+\item[{\$}]{ ancodeId, }
+\item[{\$}]{ commonAncode = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_af7a41bb82bab87ea12b2abed4dfde274}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramTab__Interface_a8fce16503f9c28f62a827cdd74b25b36}{phpMorphy\_\-GramTab\_\-Interface}.
+
+\hypertarget{classphpMorphy__GramTab_aa686e51e38e38d36453c710cabacba69}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!buildAncodesMap@{buildAncodesMap}}
+\index{buildAncodesMap@{buildAncodesMap}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{buildAncodesMap}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::buildAncodesMap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__GramTab_aa686e51e38e38d36453c710cabacba69}
+\hypertarget{classphpMorphy__GramTab_a8ab58c6d46b68c699ed14492d2c3a83e}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!create@{create}}
+\index{create@{create}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}static phpMorphy\_\-GramTab::create (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Storage} \$}]{ storage}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classphpMorphy__GramTab_a8ab58c6d46b68c699ed14492d2c3a83e}
+\hypertarget{classphpMorphy__GramTab_ad08c1d9640b2a026626758a399008e47}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!findAncode@{findAncode}}
+\index{findAncode@{findAncode}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{findAncode}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::findAncode (
+\begin{DoxyParamCaption}
+\item[{\$}]{ partOfSpeech, }
+\item[{\$}]{ grammems}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__GramTab_ad08c1d9640b2a026626758a399008e47}
+\hypertarget{classphpMorphy__GramTab_acd339c0158bf69afdfd00ba2273a3722}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!getGrammems@{getGrammems}}
+\index{getGrammems@{getGrammems}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{getGrammems}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::getGrammems (
+\begin{DoxyParamCaption}
+\item[{\$}]{ ancodeId}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_acd339c0158bf69afdfd00ba2273a3722}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramTab__Interface_af2191f54f4a58ea79bd980fc00f2ccaf}{phpMorphy\_\-GramTab\_\-Interface}.
+
+\hypertarget{classphpMorphy__GramTab_a8aa97495600e8fbd6dc534365b9145e5}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!getPartOfSpeech@{getPartOfSpeech}}
+\index{getPartOfSpeech@{getPartOfSpeech}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{getPartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::getPartOfSpeech (
+\begin{DoxyParamCaption}
+\item[{\$}]{ ancodeId}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_a8aa97495600e8fbd6dc534365b9145e5}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramTab__Interface_a8588c3b69fcc065486661ec4a71a6b1c}{phpMorphy\_\-GramTab\_\-Interface}.
+
+\hypertarget{classphpMorphy__GramTab_a5a78efa117530fa256f1f49f6afe56b4}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!includeConsts@{includeConsts}}
+\index{includeConsts@{includeConsts}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{includeConsts}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::includeConsts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_a5a78efa117530fa256f1f49f6afe56b4}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramTab__Interface_ab1b6b5988b52e4e984f238bf23200469}{phpMorphy\_\-GramTab\_\-Interface}.
+
+\hypertarget{classphpMorphy__GramTab_afa99b6301598d6b60a22e63647ff24d4}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!resolveGrammemIds@{resolveGrammemIds}}
+\index{resolveGrammemIds@{resolveGrammemIds}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{resolveGrammemIds}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::resolveGrammemIds (
+\begin{DoxyParamCaption}
+\item[{\$}]{ ids}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_afa99b6301598d6b60a22e63647ff24d4}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramTab__Interface_ab6f68cab39718acf32c4580539d7fa17}{phpMorphy\_\-GramTab\_\-Interface}.
+
+\hypertarget{classphpMorphy__GramTab_aa71f3a190c26fe9a938d90e0000ae6d0}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!resolvePartOfSpeechId@{resolvePartOfSpeechId}}
+\index{resolvePartOfSpeechId@{resolvePartOfSpeechId}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{resolvePartOfSpeechId}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::resolvePartOfSpeechId (
+\begin{DoxyParamCaption}
+\item[{\$}]{ id}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_aa71f3a190c26fe9a938d90e0000ae6d0}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramTab__Interface_a7c440e380d7d26c29951ba5dd2af5256}{phpMorphy\_\-GramTab\_\-Interface}.
+
+\hypertarget{classphpMorphy__GramTab_a1f411dd80d6c23355b31fc01c8159bef}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!stringToAncode@{stringToAncode}}
+\index{stringToAncode@{stringToAncode}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{stringToAncode}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::stringToAncode (
+\begin{DoxyParamCaption}
+\item[{\$}]{ string}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_a1f411dd80d6c23355b31fc01c8159bef}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramTab__Interface_a61add1b73b5789a6b5c34f784feeda71}{phpMorphy\_\-GramTab\_\-Interface}.
+
+\hypertarget{classphpMorphy__GramTab_ac8bfd7100deebdcce34318a164f46cb6}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!toString@{toString}}
+\index{toString@{toString}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{toString}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::toString (
+\begin{DoxyParamCaption}
+\item[{\$}]{ partOfSpeechId, }
+\item[{\$}]{ grammemIds}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramTab_ac8bfd7100deebdcce34318a164f46cb6}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramTab__Interface_a4fc163ef8da2bb73ba1d99795619ef40}{phpMorphy\_\-GramTab\_\-Interface}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy__GramTab_a6aeaac9d03957bd2724991f4bbcad082}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!\$ancodes@{\$ancodes}}
+\index{\$ancodes@{\$ancodes}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{\$ancodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::\$ancodes\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__GramTab_a6aeaac9d03957bd2724991f4bbcad082}
+\hypertarget{classphpMorphy__GramTab_ab0d2cee21fc1c75117cd794b493472b6}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!\$data@{\$data}}
+\index{\$data@{\$data}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{\$data}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::\$data\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__GramTab_ab0d2cee21fc1c75117cd794b493472b6}
+\hypertarget{classphpMorphy__GramTab_af618e178ed9eff879c73ec4ad05bfd78}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!\$grammems@{\$grammems}}
+\index{\$grammems@{\$grammems}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{\$grammems}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::\$grammems\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__GramTab_af618e178ed9eff879c73ec4ad05bfd78}
+\hypertarget{classphpMorphy__GramTab_a9dc10f87d1b6ff4f1e6e8bc3a17b9535}{
+\index{phpMorphy\_\-GramTab@{phpMorphy\_\-GramTab}!\$poses@{\$poses}}
+\index{\$poses@{\$poses}!phpMorphy_GramTab@{phpMorphy\_\-GramTab}}
+\subsubsection[{\$poses}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramTab::\$poses\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__GramTab_a9dc10f87d1b6ff4f1e6e8bc3a17b9535}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gramtab_8php}{gramtab.php}\end{DoxyCompactItemize}

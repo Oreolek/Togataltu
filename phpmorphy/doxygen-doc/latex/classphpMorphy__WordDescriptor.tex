@@ -1,0 +1,315 @@
+\hypertarget{classphpMorphy__WordDescriptor}{
+\section{Класс phpMorphy\_\-WordDescriptor}
+\label{classphpMorphy__WordDescriptor}\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_adcd5834c9309bb678cde544713e4cd58}{\_\-\_\-construct} (\$word, \$annot, \hyperlink{classphpMorphy__Morphier__Helper}{phpMorphy\_\-Morphier\_\-Helper} \$helper)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a5747492e1165fbdf0cec196c43f13ac0}{getPseudoRoot} ()
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a631aa1a6316b5cb1f3c18e0b79680454}{getBaseForm} ()
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_ad0baf300b8e115d89f47f49855a1e951}{getAllForms} ()
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a236ea6caf054808fabc1f2768e6357ab}{getWordForm} (\$index)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a4ec7caad1df3d72bc2f4aea0298a08ac}{getFoundWordForm} ()
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a177a14141d457de54aee96777727f2f5}{hasGrammems} (\$grammems)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_aaeefecec92bb11cf05edcc4cab8149d1}{getWordFormsByGrammems} (\$grammems)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a0e1db696804fae13e215c1db77a3b75d}{hasPartOfSpeech} (\$poses)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a5e03cf059f6e3c44784838988316847a}{getWordFormsByPartOfSpeech} (\$poses)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a49c69b4849184c3a19666a4ff408f9ca}{count} ()
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a93584086d466dac1f43d12fdd82cf1c6}{offsetExists} (\$off)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a45fbfc694d5a543ea525ac5525bb0535}{offsetSet} (\$off, \$value)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a0bc93324f25b19598ba6dac44ceafe7c}{offsetUnset} (\$off)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_ac5e5c09708708f018f9f6331299a2af1}{offsetGet} (\$off)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_ab8f33e0e048840dba32c3787f9da997e}{getIterator} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a8af15e0fbbb3c7a5c7cfb7b68eab7311}{createWordForm} (\$word, \$form\_\-no, \$ancode)
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a64dcf01200d1ba78fa8fdc3b4a5b70fa}{readAllForms} ()
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a2401bc461336b4bd3d42767fac22191f}{getFoundFormNoLow} ()
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a89dff0dcb1eb0758821107e913989be1}{getFoundFormNoHigh} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a285cd23cacf54e108d55aa508045d066}{\$word}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_acfeac68ebeb66c776523b5db14303162}{\$annot}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_acba78adb26fe19aa780577b8d8a7dc19}{\$helper}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_aa18e3590050c6570f48a5c4e356d80d0}{\$cached\_\-forms}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a942ddc98031167cf6013cbc047bbd13b}{\$cached\_\-base}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a54ef640ed6db1606fb1aa3bce8982d0e}{\$cached\_\-pseudo\_\-root}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a2ddd66c4631cbbab7deb058377dc57d2}{\$all\_\-forms}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a0f18877bd1b2b6e6cdfc396c0728880d}{\$found\_\-form\_\-no}
+\item 
+\hyperlink{classphpMorphy__WordDescriptor_a23529fb544099cbaf991a806893ca91b}{\$common\_\-ancode\_\-grammems}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classphpMorphy__WordDescriptor_adcd5834c9309bb678cde544713e4cd58}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annot, }
+\item[{{\bf phpMorphy\_\-Morphier\_\-Helper} \$}]{ helper}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_adcd5834c9309bb678cde544713e4cd58}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy__WordDescriptor_a49c69b4849184c3a19666a4ff408f9ca}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!count@{count}}
+\index{count@{count}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a49c69b4849184c3a19666a4ff408f9ca}
+\hypertarget{classphpMorphy__WordDescriptor_a8af15e0fbbb3c7a5c7cfb7b68eab7311}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!createWordForm@{createWordForm}}
+\index{createWordForm@{createWordForm}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{createWordForm}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::createWordForm (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ form\_\-no, }
+\item[{\$}]{ ancode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a8af15e0fbbb3c7a5c7cfb7b68eab7311}
+\hypertarget{classphpMorphy__WordDescriptor_ad0baf300b8e115d89f47f49855a1e951}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getAllForms@{getAllForms}}
+\index{getAllForms@{getAllForms}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getAllForms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getAllForms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_ad0baf300b8e115d89f47f49855a1e951}
+\hypertarget{classphpMorphy__WordDescriptor_a631aa1a6316b5cb1f3c18e0b79680454}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getBaseForm@{getBaseForm}}
+\index{getBaseForm@{getBaseForm}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getBaseForm}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getBaseForm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a631aa1a6316b5cb1f3c18e0b79680454}
+\hypertarget{classphpMorphy__WordDescriptor_a89dff0dcb1eb0758821107e913989be1}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getFoundFormNoHigh@{getFoundFormNoHigh}}
+\index{getFoundFormNoHigh@{getFoundFormNoHigh}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getFoundFormNoHigh}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getFoundFormNoHigh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a89dff0dcb1eb0758821107e913989be1}
+\hypertarget{classphpMorphy__WordDescriptor_a2401bc461336b4bd3d42767fac22191f}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getFoundFormNoLow@{getFoundFormNoLow}}
+\index{getFoundFormNoLow@{getFoundFormNoLow}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getFoundFormNoLow}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getFoundFormNoLow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a2401bc461336b4bd3d42767fac22191f}
+\hypertarget{classphpMorphy__WordDescriptor_a4ec7caad1df3d72bc2f4aea0298a08ac}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getFoundWordForm@{getFoundWordForm}}
+\index{getFoundWordForm@{getFoundWordForm}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getFoundWordForm}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getFoundWordForm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a4ec7caad1df3d72bc2f4aea0298a08ac}
+\hypertarget{classphpMorphy__WordDescriptor_ab8f33e0e048840dba32c3787f9da997e}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getIterator}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getIterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_ab8f33e0e048840dba32c3787f9da997e}
+\hypertarget{classphpMorphy__WordDescriptor_a5747492e1165fbdf0cec196c43f13ac0}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getPseudoRoot@{getPseudoRoot}}
+\index{getPseudoRoot@{getPseudoRoot}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getPseudoRoot}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getPseudoRoot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a5747492e1165fbdf0cec196c43f13ac0}
+\hypertarget{classphpMorphy__WordDescriptor_a236ea6caf054808fabc1f2768e6357ab}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getWordForm@{getWordForm}}
+\index{getWordForm@{getWordForm}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getWordForm}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getWordForm (
+\begin{DoxyParamCaption}
+\item[{\$}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a236ea6caf054808fabc1f2768e6357ab}
+\hypertarget{classphpMorphy__WordDescriptor_aaeefecec92bb11cf05edcc4cab8149d1}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getWordFormsByGrammems@{getWordFormsByGrammems}}
+\index{getWordFormsByGrammems@{getWordFormsByGrammems}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getWordFormsByGrammems}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getWordFormsByGrammems (
+\begin{DoxyParamCaption}
+\item[{\$}]{ grammems}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_aaeefecec92bb11cf05edcc4cab8149d1}
+\hypertarget{classphpMorphy__WordDescriptor_a5e03cf059f6e3c44784838988316847a}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!getWordFormsByPartOfSpeech@{getWordFormsByPartOfSpeech}}
+\index{getWordFormsByPartOfSpeech@{getWordFormsByPartOfSpeech}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{getWordFormsByPartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::getWordFormsByPartOfSpeech (
+\begin{DoxyParamCaption}
+\item[{\$}]{ poses}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a5e03cf059f6e3c44784838988316847a}
+\hypertarget{classphpMorphy__WordDescriptor_a177a14141d457de54aee96777727f2f5}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!hasGrammems@{hasGrammems}}
+\index{hasGrammems@{hasGrammems}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{hasGrammems}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::hasGrammems (
+\begin{DoxyParamCaption}
+\item[{\$}]{ grammems}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a177a14141d457de54aee96777727f2f5}
+\hypertarget{classphpMorphy__WordDescriptor_a0e1db696804fae13e215c1db77a3b75d}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!hasPartOfSpeech@{hasPartOfSpeech}}
+\index{hasPartOfSpeech@{hasPartOfSpeech}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{hasPartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::hasPartOfSpeech (
+\begin{DoxyParamCaption}
+\item[{\$}]{ poses}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a0e1db696804fae13e215c1db77a3b75d}
+\hypertarget{classphpMorphy__WordDescriptor_a93584086d466dac1f43d12fdd82cf1c6}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!offsetExists@{offsetExists}}
+\index{offsetExists@{offsetExists}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{offsetExists}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::offsetExists (
+\begin{DoxyParamCaption}
+\item[{\$}]{ off}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a93584086d466dac1f43d12fdd82cf1c6}
+\hypertarget{classphpMorphy__WordDescriptor_ac5e5c09708708f018f9f6331299a2af1}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!offsetGet@{offsetGet}}
+\index{offsetGet@{offsetGet}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{offsetGet}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::offsetGet (
+\begin{DoxyParamCaption}
+\item[{\$}]{ off}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_ac5e5c09708708f018f9f6331299a2af1}
+\hypertarget{classphpMorphy__WordDescriptor_a45fbfc694d5a543ea525ac5525bb0535}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!offsetSet@{offsetSet}}
+\index{offsetSet@{offsetSet}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{offsetSet}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::offsetSet (
+\begin{DoxyParamCaption}
+\item[{\$}]{ off, }
+\item[{\$}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a45fbfc694d5a543ea525ac5525bb0535}
+\hypertarget{classphpMorphy__WordDescriptor_a0bc93324f25b19598ba6dac44ceafe7c}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!offsetUnset@{offsetUnset}}
+\index{offsetUnset@{offsetUnset}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{offsetUnset}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::offsetUnset (
+\begin{DoxyParamCaption}
+\item[{\$}]{ off}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__WordDescriptor_a0bc93324f25b19598ba6dac44ceafe7c}
+\hypertarget{classphpMorphy__WordDescriptor_a64dcf01200d1ba78fa8fdc3b4a5b70fa}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!readAllForms@{readAllForms}}
+\index{readAllForms@{readAllForms}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{readAllForms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::readAllForms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a64dcf01200d1ba78fa8fdc3b4a5b70fa}
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy__WordDescriptor_a2ddd66c4631cbbab7deb058377dc57d2}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$all\_\-forms@{\$all\_\-forms}}
+\index{\$all\_\-forms@{\$all\_\-forms}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$all\_\-forms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$all\_\-forms\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a2ddd66c4631cbbab7deb058377dc57d2}
+\hypertarget{classphpMorphy__WordDescriptor_acfeac68ebeb66c776523b5db14303162}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$annot@{\$annot}}
+\index{\$annot@{\$annot}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$annot}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$annot\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_acfeac68ebeb66c776523b5db14303162}
+\hypertarget{classphpMorphy__WordDescriptor_a942ddc98031167cf6013cbc047bbd13b}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$cached\_\-base@{\$cached\_\-base}}
+\index{\$cached\_\-base@{\$cached\_\-base}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$cached\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$cached\_\-base\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a942ddc98031167cf6013cbc047bbd13b}
+\hypertarget{classphpMorphy__WordDescriptor_aa18e3590050c6570f48a5c4e356d80d0}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$cached\_\-forms@{\$cached\_\-forms}}
+\index{\$cached\_\-forms@{\$cached\_\-forms}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$cached\_\-forms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$cached\_\-forms\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_aa18e3590050c6570f48a5c4e356d80d0}
+\hypertarget{classphpMorphy__WordDescriptor_a54ef640ed6db1606fb1aa3bce8982d0e}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$cached\_\-pseudo\_\-root@{\$cached\_\-pseudo\_\-root}}
+\index{\$cached\_\-pseudo\_\-root@{\$cached\_\-pseudo\_\-root}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$cached\_\-pseudo\_\-root}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$cached\_\-pseudo\_\-root\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a54ef640ed6db1606fb1aa3bce8982d0e}
+\hypertarget{classphpMorphy__WordDescriptor_a23529fb544099cbaf991a806893ca91b}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$common\_\-ancode\_\-grammems@{\$common\_\-ancode\_\-grammems}}
+\index{\$common\_\-ancode\_\-grammems@{\$common\_\-ancode\_\-grammems}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$common\_\-ancode\_\-grammems}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$common\_\-ancode\_\-grammems\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a23529fb544099cbaf991a806893ca91b}
+\hypertarget{classphpMorphy__WordDescriptor_a0f18877bd1b2b6e6cdfc396c0728880d}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$found\_\-form\_\-no@{\$found\_\-form\_\-no}}
+\index{\$found\_\-form\_\-no@{\$found\_\-form\_\-no}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$found\_\-form\_\-no}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$found\_\-form\_\-no\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a0f18877bd1b2b6e6cdfc396c0728880d}
+\hypertarget{classphpMorphy__WordDescriptor_acba78adb26fe19aa780577b8d8a7dc19}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$helper@{\$helper}}
+\index{\$helper@{\$helper}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$helper}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$helper\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_acba78adb26fe19aa780577b8d8a7dc19}
+\hypertarget{classphpMorphy__WordDescriptor_a285cd23cacf54e108d55aa508045d066}{
+\index{phpMorphy\_\-WordDescriptor@{phpMorphy\_\-WordDescriptor}!\$word@{\$word}}
+\index{\$word@{\$word}!phpMorphy_WordDescriptor@{phpMorphy\_\-WordDescriptor}}
+\subsubsection[{\$word}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-WordDescriptor::\$word\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__WordDescriptor_a285cd23cacf54e108d55aa508045d066}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{morphiers_8php}{morphiers.php}\end{DoxyCompactItemize}

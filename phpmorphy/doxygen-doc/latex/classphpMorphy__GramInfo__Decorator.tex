@@ -1,0 +1,307 @@
+\hypertarget{classphpMorphy__GramInfo__Decorator}{
+\section{Класс phpMorphy\_\-GramInfo\_\-Decorator}
+\label{classphpMorphy__GramInfo__Decorator}\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+}
+Граф наследования:phpMorphy\_\-GramInfo\_\-Decorator:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.916667cm]{classphpMorphy__GramInfo__Decorator}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a9b3df41388da8c742dd354d03f75bbc4}{phpMorphy\_\-GramInfo\_\-Decorator} (\hyperlink{interfacephpMorphy__GramInfo__Interace}{phpMorphy\_\-GramInfo\_\-Interace} \$info)
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a0b3f846da88a8e3f7f6b81ece61067ed}{readGramInfoHeader} (\$offset)
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a73ccfbb5711ccf48220c05017a19a5c5}{getGramInfoHeaderSize} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a64dc470014661163c986515947a5d7f0}{readAncodes} (\$info)
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_ac033d5ea7e74694f7da919bb4e8d12e1}{readFlexiaData} (\$info)
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a6a3e4e55d9ff8ca83a61953d55c892c0}{readAllGramInfoOffsets} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a394b51f05970a05e6739ae32aa64eadf}{readAllPartOfSpeech} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a9296a1d7b88ee752282e53846556a672}{readAllGrammems} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a6042bc4df5f6e0500c503e62156a275b}{readAllAncodes} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_aa1ad2a569f132fb69deb1b884071eec9}{getLocale} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a4a44a1c12f42f59d5c8c4742d07098a8}{getEncoding} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_ac002661c0fc2b9755ebb38039816e678}{getCharSize} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_add20afae225bfc1dbe8dca4fe509bc93}{getEnds} ()
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a68a7512d48fd6ac30a1ea8ee16348f53}{getHeader} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__GramInfo__Decorator_a2c90c7dfe1dda0b3e6b90d6a3bacac89}{\$info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy__GramInfo__Decorator_ac002661c0fc2b9755ebb38039816e678}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!getCharSize@{getCharSize}}
+\index{getCharSize@{getCharSize}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{getCharSize}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::getCharSize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_ac002661c0fc2b9755ebb38039816e678}
+Return size of character (cp1251 -\/ 1, utf8 -\/ 1, utf16 -\/ 2, utf32 -\/ 4 etc) \begin{DoxyReturn}{Возвращает}
+int 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_afeb0d30d02e34c20134f47ce99b45deb}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+
+
+Переопределяется в \hyperlink{classphpMorphy__GramInfo__Proxy__WithHeader_a776d157c84d450ddb0a41e4def4f11e2}{phpMorphy\_\-GramInfo\_\-Proxy\_\-WithHeader}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a4a44a1c12f42f59d5c8c4742d07098a8}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!getEncoding@{getEncoding}}
+\index{getEncoding@{getEncoding}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{getEncoding}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::getEncoding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a4a44a1c12f42f59d5c8c4742d07098a8}
+Return encoding for graminfo file \begin{DoxyReturn}{Возвращает}
+string 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_ac63a757daf416ede72624f4064db9176}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+
+
+Переопределяется в \hyperlink{classphpMorphy__GramInfo__Proxy__WithHeader_a24e8ccac85536cf68f8314bb8f0fc74a}{phpMorphy\_\-GramInfo\_\-Proxy\_\-WithHeader}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_add20afae225bfc1dbe8dca4fe509bc93}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!getEnds@{getEnds}}
+\index{getEnds@{getEnds}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{getEnds}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::getEnds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_add20afae225bfc1dbe8dca4fe509bc93}
+Return end of string value (usually string with  value of char\_\-size + 1 length) \begin{DoxyReturn}{Возвращает}
+string 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_a42c172f19abc725b09bc65b872bba20d}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+
+
+Переопределяется в \hyperlink{classphpMorphy__GramInfo__Proxy__WithHeader_a689b3799cc2f901b8c9d384189051581}{phpMorphy\_\-GramInfo\_\-Proxy\_\-WithHeader}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a73ccfbb5711ccf48220c05017a19a5c5}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!getGramInfoHeaderSize@{getGramInfoHeaderSize}}
+\index{getGramInfoHeaderSize@{getGramInfoHeaderSize}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{getGramInfoHeaderSize}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::getGramInfoHeaderSize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a73ccfbb5711ccf48220c05017a19a5c5}
+Returns size of header struct 
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_a9afa9616a24c163289a2df924320aa07}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a68a7512d48fd6ac30a1ea8ee16348f53}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{getHeader}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::getHeader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a68a7512d48fd6ac30a1ea8ee16348f53}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_a979cffb31fd901a50b55219d2d8353bf}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+
+
+Переопределяется в \hyperlink{classphpMorphy__GramInfo__Proxy__WithHeader_affbe11ec5e1e9685b36de753994a9821}{phpMorphy\_\-GramInfo\_\-Proxy\_\-WithHeader}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_aa1ad2a569f132fb69deb1b884071eec9}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{getLocale}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::getLocale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_aa1ad2a569f132fb69deb1b884071eec9}
+Returns langugage for graminfo file \begin{DoxyReturn}{Возвращает}
+string 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_af1097bd5a3970e81b16bffcb033f0018}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+
+
+Переопределяется в \hyperlink{classphpMorphy__GramInfo__Proxy__WithHeader_a8b5b6ea4f69358c419527a94eb94a89c}{phpMorphy\_\-GramInfo\_\-Proxy\_\-WithHeader}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a9b3df41388da8c742dd354d03f75bbc4}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{phpMorphy\_\-GramInfo\_\-Decorator}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::phpMorphy\_\-GramInfo\_\-Decorator (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-GramInfo\_\-Interace} \$}]{ info}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a9b3df41388da8c742dd354d03f75bbc4}
+\hypertarget{classphpMorphy__GramInfo__Decorator_a6042bc4df5f6e0500c503e62156a275b}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!readAllAncodes@{readAllAncodes}}
+\index{readAllAncodes@{readAllAncodes}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{readAllAncodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::readAllAncodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a6042bc4df5f6e0500c503e62156a275b}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_a5b0b55c86db180b14d04e3b37f207d28}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a6a3e4e55d9ff8ca83a61953d55c892c0}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!readAllGramInfoOffsets@{readAllGramInfoOffsets}}
+\index{readAllGramInfoOffsets@{readAllGramInfoOffsets}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{readAllGramInfoOffsets}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::readAllGramInfoOffsets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a6a3e4e55d9ff8ca83a61953d55c892c0}
+Read all graminfo headers offsets, which can be used latter for readGramInfoHeader method \begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_aec1ab68af0387936b3ef0490bfef476e}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a9296a1d7b88ee752282e53846556a672}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!readAllGrammems@{readAllGrammems}}
+\index{readAllGrammems@{readAllGrammems}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{readAllGrammems}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::readAllGrammems (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a9296a1d7b88ee752282e53846556a672}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_a621f72c5673006994cdd0ba684ee54d7}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a394b51f05970a05e6739ae32aa64eadf}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!readAllPartOfSpeech@{readAllPartOfSpeech}}
+\index{readAllPartOfSpeech@{readAllPartOfSpeech}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{readAllPartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::readAllPartOfSpeech (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a394b51f05970a05e6739ae32aa64eadf}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_a3d67913bec52216bfd3bc82184326044}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a64dc470014661163c986515947a5d7f0}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!readAncodes@{readAncodes}}
+\index{readAncodes@{readAncodes}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{readAncodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::readAncodes (
+\begin{DoxyParamCaption}
+\item[{\$}]{ info}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a64dc470014661163c986515947a5d7f0}
+Read ancodes section for header retrieved with readGramInfoHeader
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em array}]\$info \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_aade433f7c59120a9903bfc4d254ae629}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+
+
+Переопределяется в \hyperlink{classphpMorphy__GramInfo__AncodeCache_a37a109f9cd2cc8cb87f96ec82a4278cd}{phpMorphy\_\-GramInfo\_\-AncodeCache}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_ac033d5ea7e74694f7da919bb4e8d12e1}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!readFlexiaData@{readFlexiaData}}
+\index{readFlexiaData@{readFlexiaData}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{readFlexiaData}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::readFlexiaData (
+\begin{DoxyParamCaption}
+\item[{\$}]{ info}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_ac033d5ea7e74694f7da919bb4e8d12e1}
+Read flexias section for header retrieved with readGramInfoHeader
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em array}]\$info \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_a9645139683b3b2784479d1a697bddc31}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+
+
+Переопределяется в \hyperlink{classphpMorphy__GramInfo__RuntimeCaching_a27fa7baf339643edaa25f1285a301b42}{phpMorphy\_\-GramInfo\_\-RuntimeCaching}.
+
+\hypertarget{classphpMorphy__GramInfo__Decorator_a0b3f846da88a8e3f7f6b81ece61067ed}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!readGramInfoHeader@{readGramInfoHeader}}
+\index{readGramInfoHeader@{readGramInfoHeader}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{readGramInfoHeader}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::readGramInfoHeader (
+\begin{DoxyParamCaption}
+\item[{\$}]{ offset}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__GramInfo__Decorator_a0b3f846da88a8e3f7f6b81ece61067ed}
+Reads graminfo header
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em int}]\$offset \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__GramInfo__Interace_a2bb2d5b7e8a2898542d638a1b2eefc19}{phpMorphy\_\-GramInfo\_\-Interace}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy__GramInfo__Decorator_a2c90c7dfe1dda0b3e6b90d6a3bacac89}{
+\index{phpMorphy\_\-GramInfo\_\-Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}!\$info@{\$info}}
+\index{\$info@{\$info}!phpMorphy_GramInfo_Decorator@{phpMorphy\_\-GramInfo\_\-Decorator}}
+\subsubsection[{\$info}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-GramInfo\_\-Decorator::\$info\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__GramInfo__Decorator_a2c90c7dfe1dda0b3e6b90d6a3bacac89}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+graminfo/\hyperlink{graminfo_8php}{graminfo.php}\end{DoxyCompactItemize}

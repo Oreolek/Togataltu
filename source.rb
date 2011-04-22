@@ -2,21 +2,22 @@
 #encoding: utf-8
 require "translator.rb"
 require "morphology.rb"
+require "stack.rb"
 class Source
-  def initialize (text,log)
+ def initialize (text,log)
     @text = text.encode("UTF-8")
     @log = log
     @translation = ""
     @pattern = ""
     @rhymed = Hash.new
-    @@translated_words = Hash.new
-    @@forms = Hash.new
+    @translated_words = Stack.new
+    
     @text.each_line do |line|
      if line.empty? then next end
      line.downcase.split.each do |word|
       vowels = word.count("aeioyuáéíóúý´")
       if (vowels==1) then #в односложных словах всё тривиально
-       @pattern << "! "
+       @pattern << "!"
        unless word.match(/[áéíóúý´]/) then #знак ударения не проставлен, но гласная единственная — проставляем
         {"a" => "á","e" => "é","i" => "í","u" => "ú","y" => "ý"}.each do |key, value| word.gsub!(key,value) end
        end #end unless
@@ -27,7 +28,7 @@ class Source
        elsif (char.match(/[aeioyu]/)) then @pattern = @pattern+"-"
        end
       end #each char in word
-      @pattern = @pattern + " "
+      #@pattern = @pattern + " "
      end #each word in line
      @pattern = @pattern + "\n"
     end #@text.each_line
@@ -69,152 +70,98 @@ class Source
   def translate()
     translator = Translator.new(@log);
     @text.split.each do |word|
-      if @@translated_words[word].nil? then
-       word_translation = translator.process(word)
-       if word_translation == true then next end
-       if word_translation != false then
-        @@translated_words[word] = word_translation
-       else
-        @log << "Перевод не удался. Прекращение работы."
-        return false
-       end
+      word_translation = translator.process(word)
+      if word_translation == true then next end
+      if word_translation != false then
+       @translated_words.push(word_translation)
+      else
+       @log << "Перевод не удался. Прекращение работы."
+       return false
       end
-      #@log << "Полученный перевод: "+@@translated_words[word]
     end
   end
   def arrange()
    morphology = Morphology.new(@log);
-   @text.downcase.split.each do |word|
-    vowels = word.count("аеиоуыэюяё")# - word.length/2 #считаем слоги; Ruby считает побайтово, поэтому приходится его поправлять (thx source777)
-    #fixed with ruby1.9
-    met_vowels = 0
-    piece = "" #текущий слог
-    index = 0
-    while (met_vowels <= vowels and word[index]) do
-     if word[index] =~ /[аеиоуыэюяё]/ then
-      met_vowels = met_vowels+1
-      if piece.match("аеиоуыэюяё") then #на один слог может быть только одна гласная
-       check_piece(piece)
-       piece = word[index]
-      end
-     end
-     piece = piece + word[index].to_s
-     index = index + 1
-    end
-   end
+#   @text.downcase.split.each do |word|
+#    vowels = word.count("аеиоуыэюяё")
+#    met_vowels = 0
+#    piece = "" #текущий слог
+#    index = 0
+#    while (met_vowels <= vowels and word[index]) do
+#     if word[index] =~ /[аеиоуыэюяё]/ then
+#      met_vowels = met_vowels+1
+#      if piece.match("аеиоуыэюяё") then #на один слог может быть только одна гласная
+#       check_piece(piece)
+#       piece = word[index]
+#      end
+#     end
+#     piece = piece + word[index].to_s
+#     index = index + 1
+#    end
+#   end
    @log << "Паттерн:\n"
    @log << @pattern
-##############################################зд. надо взять каждое слово и получить его словоформы, а также проставить каждой словоформе ударение
-##############################################затем устроить Большой Перебор по паттерну
    line_number = 0
-   @text.each_line do |line|
-   line_number = line_number + 1
-   line.split.each do |word|
-   forms_ready = Array.new
-   next if @@translated_words[word].nil?
-   @pattern.split.each do |word_pattern|
-    piece = ""
-    result = ""
-    @@translated_words[word].to_s.each_char do |char|
+   @pattern.each_line do |pattern_line|
+    if (@translated_words.count() == 0) then break end
+    pattern_index = 0
+    line_number = line_number + 1
+    while (pattern_index < pattern_line.size and @translated_words.count() > 0) do
+     word = @translated_words.pop()
+     forms = morphology.process(word)
+     if (forms == false) then
+      #@translation << word .. " "
+      #pieces = 0
+      #word.scan(/[аеиоуыэюяё]/) { pieces += 1}
+      #pattern_index = pattern_index + pieces
+      next
+     end
+     forms_result = Array.new()
+     # TODO: если слово — последнее в строке или предпоследнее, то отсеиваем все не рифмующиеся (плохо рифмующиеся) словоформы. Если ничего не осталось — не отсеиваем.
+     forms.each do |form|
+      forms_result.push(check_pattern(form, pattern_line,pattern_index))
+      #TODO: forms_result надо сделать хэшем массивов и сортировать по ключам. Выбирать любой вариант из полученного массива.
+     end
+     form_index = 0
+     forms_result.each do |result|
+      if result <= 12 then 
+       @translation << forms[form_index] + " "
+       pieces = 0
+       forms[form_index].scan(/[аеиоуыэюяё]/) { pieces += 1}
+       pattern_index = pattern_index + pieces
+       break
+      end
+      form_index += 1
+     end
+    end
+    @translation << "\n"
+   end
+  end
+  private
+  def check_pattern(word, pattern, index) #проверяет соответствие слова паттерну; возвращает 0, если слово вписывается и число, если не вписывается
+   word_pattern = ""
+   piece = ""
+   word.to_s.each_char do |char|
      if char =~ /[аеиоуыэюяё]/ then
       if piece =~ /[аеиоуыэюяё]/ then
-       result << check_piece(piece)
+       word_pattern << check_piece(piece)
        piece = char
       end
      end
-     piece << char
-    end #@@translated_words[word].to_s.each_char
-    if (word_pattern == result) then
-     word = @@translated_words[word]
-    else
-     @@forms[word] = morphology.process(@@translated_words[word])
-     if not @@forms[word] == false
-      changed = false;
-      @@forms[word].each do |form|
-       piece = ""
-       result = ""
-       form.each_char do |char|
-        if char =~ /[аеиоуыэюяё]/ then
-         if piece =~ /[аеиоуыэюяё]/ then
-          result << check_piece(piece)
-          piece = char
-         end
-        end
-        piece << char
-       end
-       if (word_pattern == result) then
-        forms_ready.push(form)
-       end
-      end
-      #@forms_ready теперь содержит все формы, подходящие по паттерну; проверим рифму
-      if line_number > 1 and (word == line.split.last or word == line.split.at(-2)) then
-       forms_ready.each do |form|
-        @rhymed[line_number][line_number..0].each_with_index do |number_of_vowels, line_index|
-	 piece = ""
-	 previous_vowel = ''
-	 line_vowel = ''
-	 form_vowel = ''
-	 i = 1
-	 found = false
-	 while i < number_of_vowels do
-	  @translation.split($/).at(line_index).split.at(-number_of_vowels).each_char do |char| #n-е слово рифмующейся строки перевода
-           if char =~ /[аеиоуыэюяё]/ then
-	    previous_vowel = char
-	    if piece =~ /[аеиоуыэюяё]/ then
-	     if check_piece(piece) == '!' then
-	      line_vowel = previous_vowel
-	      break
-	     end
-	    end
-	   end
-           piece << char
-	  end
-	  piece = ""
-	  form.each_char do |char|
-	   if char =~ /[аеиоуыэюяё]/ then
-	    previous_vowel = char
-	    if piece =~ /[аеиоуыэюяё]/ then
-	     if check_piece(piece) == '!' then
-	      form_vowel = previous_vowel
-	      break
-	     end
-	    end
-	   end
-           piece << char
-	  end
-	  if line_vowel != form_vowel then 
-	   found = false
-	   break
-	  else
-	   if i == number_of_vowels-1 then
-	    word = form
-	    found = true
-	    break
-	   end
-	  end
-	  if (found == true) then break end
-	  i = i + 1
-	 end #end while
-	end
-       end
-      else
-       if forms_ready.size == 0 then changed = false
-       else
-        word = forms_ready[rand(forms_ready.size)]
-	changed = true
-       end
-      end
-      if not changed then word = @@forms[word][rand(@@forms[word].size)] end #если форма не подобрана, ставим наугад — чтобы не потерять слово
-     else #формы не получены, выбирать не из чего
-      word = @@translated_words[word]
-     end
-    end #if (word_pattern == result)
-    @translation << word.to_s
-   end #@text.split.each.to_s do |word|
-   @translation << " "
+     piece = piece + char
+    end
+   pattern_index = index #или index+1?
+   result = 0
+   word_pattern.each_char do |char|
+    if char == '-' and pattern[pattern_index]=='!' then
+     result = result + 2 #безударные слоги не могут стать ударными - см. главу 1
+    end
+    if char == '!' and pattern[pattern_index]=='-' then
+     result = result + 1
+    end
+    pattern_index = pattern_index + 1
    end
-   @translation << "\n"
-   end
+   return result
   end
   #проверка русских слогов на ударение
   def check_piece(piece)

@@ -1,0 +1,191 @@
+\hypertarget{classphpMorphy__Shm__Header}{
+\section{Класс phpMorphy\_\-Shm\_\-Header}
+\label{classphpMorphy__Shm__Header}\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}}
+}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a6f3e2d88e90cb3d8f93a4576ba2f441b}{\_\-\_\-construct} (\$segmentId, \$maxSize)
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a17a08fae7242e573f770c0023eb31ea4}{lookup} (\$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a8d8c1181d53cd84446589a54f6fe8654}{exists} (\$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Header_adaa6a4c38e2e664cd7f96af927b7e9b7}{register} (\$filePath, \$fh)
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a8a85c78c33a9883d0dfea3dd5ab8ea72}{delete} (\$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a9017ef0cf4ba5556940f077ef64ffe34}{clear} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Header_accdf5f9f57e064c8d90b59902a00c401}{getAllFiles} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a6ff2a0a89b5d7ad76a817a74f6c8523b}{registerBlock} (\$offset, \$size)
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a2e722c26039fe2ce0184aa9dc165b97e}{freeBlock} (\$offset, \$size)
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a50347b319e3ddb2d065599e5d3004a29}{defrag} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a968d64a36f51473454fba5f30284dac4}{getBlock} (\$fileSize)
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a909ab38902b0265f1d98642ff33552fe}{normalizePath} (\$path)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Shm__Header_afa4cfa3077807fb09b107f89f7bda0b1}{\$max\_\-size}
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a94145c62fe50387c3140d6240bdfd83f}{\$segment\_\-id}
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a1a7aa025c22d1f96081282413c3e2eb9}{\$files\_\-map} = array()
+\item 
+\hyperlink{classphpMorphy__Shm__Header_a5b32cd9c7206a4ea6016485b98ea70f3}{\$free\_\-map} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classphpMorphy__Shm__Header_a6f3e2d88e90cb3d8f93a4576ba2f441b}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{\$}]{ segmentId, }
+\item[{\$}]{ maxSize}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Header_a6f3e2d88e90cb3d8f93a4576ba2f441b}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy__Shm__Header_a9017ef0cf4ba5556940f077ef64ffe34}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!clear@{clear}}
+\index{clear@{clear}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Header_a9017ef0cf4ba5556940f077ef64ffe34}
+\hypertarget{classphpMorphy__Shm__Header_a50347b319e3ddb2d065599e5d3004a29}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!defrag@{defrag}}
+\index{defrag@{defrag}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{defrag}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::defrag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_a50347b319e3ddb2d065599e5d3004a29}
+\hypertarget{classphpMorphy__Shm__Header_a8a85c78c33a9883d0dfea3dd5ab8ea72}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!delete@{delete}}
+\index{delete@{delete}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::delete (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Header_a8a85c78c33a9883d0dfea3dd5ab8ea72}
+\hypertarget{classphpMorphy__Shm__Header_a8d8c1181d53cd84446589a54f6fe8654}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!exists@{exists}}
+\index{exists@{exists}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::exists (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Header_a8d8c1181d53cd84446589a54f6fe8654}
+\hypertarget{classphpMorphy__Shm__Header_a2e722c26039fe2ce0184aa9dc165b97e}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!freeBlock@{freeBlock}}
+\index{freeBlock@{freeBlock}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{freeBlock}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::freeBlock (
+\begin{DoxyParamCaption}
+\item[{\$}]{ offset, }
+\item[{\$}]{ size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_a2e722c26039fe2ce0184aa9dc165b97e}
+\hypertarget{classphpMorphy__Shm__Header_accdf5f9f57e064c8d90b59902a00c401}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!getAllFiles@{getAllFiles}}
+\index{getAllFiles@{getAllFiles}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{getAllFiles}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::getAllFiles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Header_accdf5f9f57e064c8d90b59902a00c401}
+\hypertarget{classphpMorphy__Shm__Header_a968d64a36f51473454fba5f30284dac4}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!getBlock@{getBlock}}
+\index{getBlock@{getBlock}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{getBlock}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::getBlock (
+\begin{DoxyParamCaption}
+\item[{\$}]{ fileSize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_a968d64a36f51473454fba5f30284dac4}
+\hypertarget{classphpMorphy__Shm__Header_a17a08fae7242e573f770c0023eb31ea4}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!lookup@{lookup}}
+\index{lookup@{lookup}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{lookup}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::lookup (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Header_a17a08fae7242e573f770c0023eb31ea4}
+\hypertarget{classphpMorphy__Shm__Header_a909ab38902b0265f1d98642ff33552fe}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!normalizePath@{normalizePath}}
+\index{normalizePath@{normalizePath}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{normalizePath}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::normalizePath (
+\begin{DoxyParamCaption}
+\item[{\$}]{ path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_a909ab38902b0265f1d98642ff33552fe}
+\hypertarget{classphpMorphy__Shm__Header_adaa6a4c38e2e664cd7f96af927b7e9b7}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!register@{register}}
+\index{register@{register}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{register}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::register (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath, }
+\item[{\$}]{ fh}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Header_adaa6a4c38e2e664cd7f96af927b7e9b7}
+\hypertarget{classphpMorphy__Shm__Header_a6ff2a0a89b5d7ad76a817a74f6c8523b}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!registerBlock@{registerBlock}}
+\index{registerBlock@{registerBlock}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{registerBlock}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::registerBlock (
+\begin{DoxyParamCaption}
+\item[{\$}]{ offset, }
+\item[{\$}]{ size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_a6ff2a0a89b5d7ad76a817a74f6c8523b}
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy__Shm__Header_a1a7aa025c22d1f96081282413c3e2eb9}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!\$files\_\-map@{\$files\_\-map}}
+\index{\$files\_\-map@{\$files\_\-map}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{\$files\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::\$files\_\-map = array()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_a1a7aa025c22d1f96081282413c3e2eb9}
+\hypertarget{classphpMorphy__Shm__Header_a5b32cd9c7206a4ea6016485b98ea70f3}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!\$free\_\-map@{\$free\_\-map}}
+\index{\$free\_\-map@{\$free\_\-map}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{\$free\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::\$free\_\-map = array()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_a5b32cd9c7206a4ea6016485b98ea70f3}
+\hypertarget{classphpMorphy__Shm__Header_afa4cfa3077807fb09b107f89f7bda0b1}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!\$max\_\-size@{\$max\_\-size}}
+\index{\$max\_\-size@{\$max\_\-size}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{\$max\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::\$max\_\-size\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_afa4cfa3077807fb09b107f89f7bda0b1}
+\hypertarget{classphpMorphy__Shm__Header_a94145c62fe50387c3140d6240bdfd83f}{
+\index{phpMorphy\_\-Shm\_\-Header@{phpMorphy\_\-Shm\_\-Header}!\$segment\_\-id@{\$segment\_\-id}}
+\index{\$segment\_\-id@{\$segment\_\-id}!phpMorphy_Shm_Header@{phpMorphy\_\-Shm\_\-Header}}
+\subsubsection[{\$segment\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Header::\$segment\_\-id\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Header_a94145c62fe50387c3140d6240bdfd83f}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{shm__utils_8php}{shm\_\-utils.php}\end{DoxyCompactItemize}

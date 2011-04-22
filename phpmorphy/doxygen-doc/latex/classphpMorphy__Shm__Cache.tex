@@ -1,0 +1,455 @@
+\hypertarget{classphpMorphy__Shm__Cache}{
+\section{Класс phpMorphy\_\-Shm\_\-Cache}
+\label{classphpMorphy__Shm__Cache}\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}}
+}
+Граф наследования:phpMorphy\_\-Shm\_\-Cache:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classphpMorphy__Shm__Cache}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_ac382d7b453b0f857112b49168bd01f57}{\_\-\_\-construct} (\$options=array(), \$clear=false)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a1c6bd207c514629bc4dec628798964bc}{close} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_aeb522fa99345a875738497f065aecbf7}{get} (\$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_aed912ca62b148800a0aab43e393f4616}{clear} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_aa79aa72a7245606f0f76ae50db68f653}{delete} (\$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a1b404d051ef44923531774cbf417fabb}{reload} (\$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a9b91c4754ca194f2ee7f6b9a98a8fced}{reloadIfExists} (\$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_aec1e489cf56452a5a7a4f02092fd5b98}{free} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a614e21104de6c14436a71923aa4aa28a}{getFilesList} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classphpMorphy__Shm__Cache_a7a6974dbfbfe3dae4a1bd6679e992d4a}{clearSemaphore} (\$semaphoreId=null)
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classphpMorphy__Shm__Cache_a96b6b32f41985d19129943700b43da2d}{DEFAULT\_\-MODE} = 0644
+\item 
+const \hyperlink{classphpMorphy__Shm__Cache_a770972d5d9c31a0148a161d3b5a4a70d}{READ\_\-BLOCK\_\-SIZE} = 8192
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a27292de44b49da0fec911cb69825e3ea}{repairOptions} (\$options)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_aae7d84bccd9286abfe3fc5cc0c5afb84}{safeInvoke} (\$filePath, \$method)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_ae01f1f0d4a71916baeb043bd00e3c8ba}{doGet} (\$filePath, \$header)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a968c5164f333fcd6795b32cb58cfd0e6}{getSingleFile} (\$header, \$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a9d25bb68cade345cea06e76cbf13a045}{doClear} (\$filePath, \$header)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a12efa08d17f11e373ca682f4de7479c5}{doDelete} (\$filePath, \$header)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_ae19174d7bf4df9155f83c1583bc89191}{doReload} (\$filePath, \$header)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_ab952c8c628b8f9deb556e5c1dea56897}{createFileDescriptor} (\$result)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a67c412f3246d100793e1a4331b0d06aa}{openFile} (\$filePath)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a58232fd7c923b045e5f8b6c59d6e24e1}{lock} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_ac8c878907f6370a9e01b013c28e6c2a3}{unlock} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a584a9712af379a3c5fbea1fa7b10667a}{getFilesOffset} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_aad0b179384ffb6a5b0ddc7dd5a3bf6e1}{getMaxOffset} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a93d86079b6f4e802a7b813171640555a}{saveFile} (\$fh, \$offset)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a429277e0c57139165785d378e9e452dc}{getSegment} (\$segmentId, \$segmentSize)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a66514e43c18f71477167b591cdb45c8f}{initHeaderObject} (\$shmId, \$lock=true)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a6a8a595945ff68edce2bc3e3f32addef}{readHeader} ()
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a6523180e4d036eb9f2a35a3d443267ed}{writeHeader} (\$shmId, \hyperlink{classphpMorphy__Shm__Header}{phpMorphy\_\-Shm\_\-Header} \$header)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_acdb2505a2318aa9bea36be35bc62d20f}{createHeader} (\$shmId)
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a6bffdc344c0b138ca9d56a27c1025eb4}{openSegment} (\$segmentId, \$size, \&\$new=null)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_aae62b0c4aa359f3652de3d636066bfed}{\$options}
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a5ca640d70ffce9040ca5bd31cf1106ee}{\$semaphore}
+\item 
+\hyperlink{classphpMorphy__Shm__Cache_a00092fb48031b83b7ed825fefbc80acb}{\$segment}
+\end{DoxyCompactItemize}
+\subsection*{Статические защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classphpMorphy__Shm__Cache_a3092c1cf7f622cda0e3ab80a55fdb310}{\$EXTENSION\_\-PRESENT} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classphpMorphy__Shm__Cache_ac382d7b453b0f857112b49168bd01f57}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{\$}]{ options = {\ttfamily array()}, }
+\item[{\$}]{ clear = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_ac382d7b453b0f857112b49168bd01f57}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy__Shm__Cache_aed912ca62b148800a0aab43e393f4616}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!clear@{clear}}
+\index{clear@{clear}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_aed912ca62b148800a0aab43e393f4616}
+
+
+Замещает \hyperlink{interfacephpMorphy__Shm__Cache__Interface_a9339f30efc68175be754c6c1aed3186e}{phpMorphy\_\-Shm\_\-Cache\_\-Interface}.
+
+\hypertarget{classphpMorphy__Shm__Cache_a7a6974dbfbfe3dae4a1bd6679e992d4a}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!clearSemaphore@{clearSemaphore}}
+\index{clearSemaphore@{clearSemaphore}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{clearSemaphore}]{\setlength{\rightskip}{0pt plus 5cm}static phpMorphy\_\-Shm\_\-Cache::clearSemaphore (
+\begin{DoxyParamCaption}
+\item[{\$}]{ semaphoreId = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a7a6974dbfbfe3dae4a1bd6679e992d4a}
+\hypertarget{classphpMorphy__Shm__Cache_a1c6bd207c514629bc4dec628798964bc}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!close@{close}}
+\index{close@{close}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_a1c6bd207c514629bc4dec628798964bc}
+
+
+Замещает \hyperlink{interfacephpMorphy__Shm__Cache__Interface_ab7ee95e37af594a88d9b06494b890bcb}{phpMorphy\_\-Shm\_\-Cache\_\-Interface}.
+
+\hypertarget{classphpMorphy__Shm__Cache_ab952c8c628b8f9deb556e5c1dea56897}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!createFileDescriptor@{createFileDescriptor}}
+\index{createFileDescriptor@{createFileDescriptor}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{createFileDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::createFileDescriptor (
+\begin{DoxyParamCaption}
+\item[{\$}]{ result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_ab952c8c628b8f9deb556e5c1dea56897}
+\hypertarget{classphpMorphy__Shm__Cache_acdb2505a2318aa9bea36be35bc62d20f}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!createHeader@{createHeader}}
+\index{createHeader@{createHeader}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{createHeader}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::createHeader (
+\begin{DoxyParamCaption}
+\item[{\$}]{ shmId}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_acdb2505a2318aa9bea36be35bc62d20f}
+\hypertarget{classphpMorphy__Shm__Cache_aa79aa72a7245606f0f76ae50db68f653}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!delete@{delete}}
+\index{delete@{delete}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::delete (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_aa79aa72a7245606f0f76ae50db68f653}
+
+
+Замещает \hyperlink{interfacephpMorphy__Shm__Cache__Interface_a09dbf682730ea15a31e2e3ccbbccfaca}{phpMorphy\_\-Shm\_\-Cache\_\-Interface}.
+
+\hypertarget{classphpMorphy__Shm__Cache_a9d25bb68cade345cea06e76cbf13a045}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!doClear@{doClear}}
+\index{doClear@{doClear}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{doClear}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::doClear (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath, }
+\item[{\$}]{ header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a9d25bb68cade345cea06e76cbf13a045}
+\hypertarget{classphpMorphy__Shm__Cache_a12efa08d17f11e373ca682f4de7479c5}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!doDelete@{doDelete}}
+\index{doDelete@{doDelete}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{doDelete}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::doDelete (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath, }
+\item[{\$}]{ header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a12efa08d17f11e373ca682f4de7479c5}
+\hypertarget{classphpMorphy__Shm__Cache_ae01f1f0d4a71916baeb043bd00e3c8ba}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!doGet@{doGet}}
+\index{doGet@{doGet}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{doGet}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::doGet (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath, }
+\item[{\$}]{ header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_ae01f1f0d4a71916baeb043bd00e3c8ba}
+\hypertarget{classphpMorphy__Shm__Cache_ae19174d7bf4df9155f83c1583bc89191}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!doReload@{doReload}}
+\index{doReload@{doReload}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{doReload}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::doReload (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath, }
+\item[{\$}]{ header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_ae19174d7bf4df9155f83c1583bc89191}
+\hypertarget{classphpMorphy__Shm__Cache_aec1e489cf56452a5a7a4f02092fd5b98}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!free@{free}}
+\index{free@{free}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{free}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_aec1e489cf56452a5a7a4f02092fd5b98}
+
+
+Замещает \hyperlink{interfacephpMorphy__Shm__Cache__Interface_a54bde3cb874b17677836e1e212d1b7db}{phpMorphy\_\-Shm\_\-Cache\_\-Interface}.
+
+\hypertarget{classphpMorphy__Shm__Cache_aeb522fa99345a875738497f065aecbf7}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!get@{get}}
+\index{get@{get}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::get (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_aeb522fa99345a875738497f065aecbf7}
+
+
+Замещает \hyperlink{interfacephpMorphy__Shm__Cache__Interface_a404d6125f5cc37380ba52291f4f314d8}{phpMorphy\_\-Shm\_\-Cache\_\-Interface}.
+
+\hypertarget{classphpMorphy__Shm__Cache_a614e21104de6c14436a71923aa4aa28a}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!getFilesList@{getFilesList}}
+\index{getFilesList@{getFilesList}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{getFilesList}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::getFilesList (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_a614e21104de6c14436a71923aa4aa28a}
+\hypertarget{classphpMorphy__Shm__Cache_a584a9712af379a3c5fbea1fa7b10667a}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!getFilesOffset@{getFilesOffset}}
+\index{getFilesOffset@{getFilesOffset}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{getFilesOffset}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::getFilesOffset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a584a9712af379a3c5fbea1fa7b10667a}
+\hypertarget{classphpMorphy__Shm__Cache_aad0b179384ffb6a5b0ddc7dd5a3bf6e1}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!getMaxOffset@{getMaxOffset}}
+\index{getMaxOffset@{getMaxOffset}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{getMaxOffset}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::getMaxOffset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_aad0b179384ffb6a5b0ddc7dd5a3bf6e1}
+\hypertarget{classphpMorphy__Shm__Cache_a429277e0c57139165785d378e9e452dc}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!getSegment@{getSegment}}
+\index{getSegment@{getSegment}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{getSegment}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::getSegment (
+\begin{DoxyParamCaption}
+\item[{\$}]{ segmentId, }
+\item[{\$}]{ segmentSize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a429277e0c57139165785d378e9e452dc}
+\hypertarget{classphpMorphy__Shm__Cache_a968c5164f333fcd6795b32cb58cfd0e6}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!getSingleFile@{getSingleFile}}
+\index{getSingleFile@{getSingleFile}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{getSingleFile}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::getSingleFile (
+\begin{DoxyParamCaption}
+\item[{\$}]{ header, }
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a968c5164f333fcd6795b32cb58cfd0e6}
+\hypertarget{classphpMorphy__Shm__Cache_a66514e43c18f71477167b591cdb45c8f}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!initHeaderObject@{initHeaderObject}}
+\index{initHeaderObject@{initHeaderObject}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{initHeaderObject}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::initHeaderObject (
+\begin{DoxyParamCaption}
+\item[{\$}]{ shmId, }
+\item[{\$}]{ lock = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a66514e43c18f71477167b591cdb45c8f}
+\hypertarget{classphpMorphy__Shm__Cache_a58232fd7c923b045e5f8b6c59d6e24e1}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!lock@{lock}}
+\index{lock@{lock}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{lock}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a58232fd7c923b045e5f8b6c59d6e24e1}
+\hypertarget{classphpMorphy__Shm__Cache_a67c412f3246d100793e1a4331b0d06aa}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!openFile@{openFile}}
+\index{openFile@{openFile}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{openFile}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::openFile (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a67c412f3246d100793e1a4331b0d06aa}
+\hypertarget{classphpMorphy__Shm__Cache_a6bffdc344c0b138ca9d56a27c1025eb4}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!openSegment@{openSegment}}
+\index{openSegment@{openSegment}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{openSegment}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::openSegment (
+\begin{DoxyParamCaption}
+\item[{\$}]{ segmentId, }
+\item[{\$}]{ size, }
+\item[{\&\$}]{ new = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a6bffdc344c0b138ca9d56a27c1025eb4}
+\hypertarget{classphpMorphy__Shm__Cache_a6a8a595945ff68edce2bc3e3f32addef}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!readHeader@{readHeader}}
+\index{readHeader@{readHeader}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{readHeader}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::readHeader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a6a8a595945ff68edce2bc3e3f32addef}
+\hypertarget{classphpMorphy__Shm__Cache_a1b404d051ef44923531774cbf417fabb}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!reload@{reload}}
+\index{reload@{reload}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{reload}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::reload (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_a1b404d051ef44923531774cbf417fabb}
+
+
+Замещает \hyperlink{interfacephpMorphy__Shm__Cache__Interface_ad96bc2ae0da8ba6caf1dfdf23e36ef03}{phpMorphy\_\-Shm\_\-Cache\_\-Interface}.
+
+\hypertarget{classphpMorphy__Shm__Cache_a9b91c4754ca194f2ee7f6b9a98a8fced}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!reloadIfExists@{reloadIfExists}}
+\index{reloadIfExists@{reloadIfExists}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{reloadIfExists}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::reloadIfExists (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Shm__Cache_a9b91c4754ca194f2ee7f6b9a98a8fced}
+
+
+Замещает \hyperlink{interfacephpMorphy__Shm__Cache__Interface_a85cdc3f30929d33fdb4455d24f5243b6}{phpMorphy\_\-Shm\_\-Cache\_\-Interface}.
+
+\hypertarget{classphpMorphy__Shm__Cache_a27292de44b49da0fec911cb69825e3ea}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!repairOptions@{repairOptions}}
+\index{repairOptions@{repairOptions}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{repairOptions}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::repairOptions (
+\begin{DoxyParamCaption}
+\item[{\$}]{ options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a27292de44b49da0fec911cb69825e3ea}
+\hypertarget{classphpMorphy__Shm__Cache_aae7d84bccd9286abfe3fc5cc0c5afb84}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!safeInvoke@{safeInvoke}}
+\index{safeInvoke@{safeInvoke}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{safeInvoke}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::safeInvoke (
+\begin{DoxyParamCaption}
+\item[{\$}]{ filePath, }
+\item[{\$}]{ method}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_aae7d84bccd9286abfe3fc5cc0c5afb84}
+\hypertarget{classphpMorphy__Shm__Cache_a93d86079b6f4e802a7b813171640555a}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!saveFile@{saveFile}}
+\index{saveFile@{saveFile}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{saveFile}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::saveFile (
+\begin{DoxyParamCaption}
+\item[{\$}]{ fh, }
+\item[{\$}]{ offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a93d86079b6f4e802a7b813171640555a}
+\hypertarget{classphpMorphy__Shm__Cache_ac8c878907f6370a9e01b013c28e6c2a3}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!unlock@{unlock}}
+\index{unlock@{unlock}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{unlock}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::unlock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_ac8c878907f6370a9e01b013c28e6c2a3}
+\hypertarget{classphpMorphy__Shm__Cache_a6523180e4d036eb9f2a35a3d443267ed}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!writeHeader@{writeHeader}}
+\index{writeHeader@{writeHeader}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{writeHeader}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::writeHeader (
+\begin{DoxyParamCaption}
+\item[{\$}]{ shmId, }
+\item[{{\bf phpMorphy\_\-Shm\_\-Header} \$}]{ header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a6523180e4d036eb9f2a35a3d443267ed}
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy__Shm__Cache_a3092c1cf7f622cda0e3ab80a55fdb310}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!\$EXTENSION\_\-PRESENT@{\$EXTENSION\_\-PRESENT}}
+\index{\$EXTENSION\_\-PRESENT@{\$EXTENSION\_\-PRESENT}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{\$EXTENSION\_\-PRESENT}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::\$EXTENSION\_\-PRESENT = null\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a3092c1cf7f622cda0e3ab80a55fdb310}
+\hypertarget{classphpMorphy__Shm__Cache_aae62b0c4aa359f3652de3d636066bfed}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!\$options@{\$options}}
+\index{\$options@{\$options}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{\$options}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::\$options\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_aae62b0c4aa359f3652de3d636066bfed}
+\hypertarget{classphpMorphy__Shm__Cache_a00092fb48031b83b7ed825fefbc80acb}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!\$segment@{\$segment}}
+\index{\$segment@{\$segment}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{\$segment}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::\$segment\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a00092fb48031b83b7ed825fefbc80acb}
+\hypertarget{classphpMorphy__Shm__Cache_a5ca640d70ffce9040ca5bd31cf1106ee}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!\$semaphore@{\$semaphore}}
+\index{\$semaphore@{\$semaphore}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{\$semaphore}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Shm\_\-Cache::\$semaphore\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Shm__Cache_a5ca640d70ffce9040ca5bd31cf1106ee}
+\hypertarget{classphpMorphy__Shm__Cache_a96b6b32f41985d19129943700b43da2d}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!DEFAULT\_\-MODE@{DEFAULT\_\-MODE}}
+\index{DEFAULT\_\-MODE@{DEFAULT\_\-MODE}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{DEFAULT\_\-MODE}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy\_\-Shm\_\-Cache::DEFAULT\_\-MODE} = 0644}}
+\label{classphpMorphy__Shm__Cache_a96b6b32f41985d19129943700b43da2d}
+\hypertarget{classphpMorphy__Shm__Cache_a770972d5d9c31a0148a161d3b5a4a70d}{
+\index{phpMorphy\_\-Shm\_\-Cache@{phpMorphy\_\-Shm\_\-Cache}!READ\_\-BLOCK\_\-SIZE@{READ\_\-BLOCK\_\-SIZE}}
+\index{READ\_\-BLOCK\_\-SIZE@{READ\_\-BLOCK\_\-SIZE}!phpMorphy_Shm_Cache@{phpMorphy\_\-Shm\_\-Cache}}
+\subsubsection[{READ\_\-BLOCK\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy\_\-Shm\_\-Cache::READ\_\-BLOCK\_\-SIZE} = 8192}}
+\label{classphpMorphy__Shm__Cache_a770972d5d9c31a0148a161d3b5a4a70d}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{shm__utils_8php}{shm\_\-utils.php}\end{DoxyCompactItemize}

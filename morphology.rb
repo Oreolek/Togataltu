@@ -4,7 +4,6 @@ require 'net/http'
 require 'uri'
 class Morphology
  def initialize (log)
-  @word = "".force_encoding("UTF-8")
   @log = log
  end
  def process(word)

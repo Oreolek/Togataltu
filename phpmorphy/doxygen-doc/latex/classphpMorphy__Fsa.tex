@@ -1,0 +1,233 @@
+\hypertarget{classphpMorphy__Fsa}{
+\section{Класс phpMorphy\_\-Fsa}
+\label{classphpMorphy__Fsa}\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}}
+}
+Граф наследования:phpMorphy\_\-Fsa:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.443299cm]{classphpMorphy__Fsa}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Fsa_ae81385b292af9644586aabab4030a50e}{getRootTrans} ()
+\item 
+\hyperlink{classphpMorphy__Fsa_ad8aee8877dc44e5d77b6fd347d8e3ceb}{getRootState} ()
+\item 
+\hyperlink{classphpMorphy__Fsa_af1bc309ae78493942070ebab03587b60}{getAlphabet} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classphpMorphy__Fsa_aa65502d2b676afec522dd0831a26c82c}{create} (\hyperlink{classphpMorphy__Storage}{phpMorphy\_\-Storage} \$storage, \$lazy)
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classphpMorphy__Fsa_afd061cb6c86a2fb54b531d61419ed527}{HEADER\_\-SIZE} = 128
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Fsa_a70e1d1978abfd06a3805870674ea8ef2}{phpMorphy\_\-Fsa} (\$resource, \$header)
+\item 
+\hyperlink{classphpMorphy__Fsa_aa4196900527053728cc90cae72391d90}{createState} (\$index)
+\item 
+\hyperlink{classphpMorphy__Fsa_a25f03d8aa0e34aac0a6e7b5801d051c4}{getRootStateIndex} ()
+\item 
+\hyperlink{classphpMorphy__Fsa_af1029e3af5c917162c2edbf5ab728768}{readRootTrans} ()
+\item 
+\hyperlink{classphpMorphy__Fsa_a23aeca4ba49eba9967b4624017ec5256}{readAlphabet} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classphpMorphy__Fsa_a2eff275f71bc526928dbcd8b69a0bc59}{readHeader} (\$headerRaw)
+\item 
+static \hyperlink{classphpMorphy__Fsa_a271549a73b003e166f688ad2dc8ba58d}{validateHeader} (\$header)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Fsa_a6da96ac3059de2cea2527517aad7c046}{\$resource}
+\item 
+\hyperlink{classphpMorphy__Fsa_a50ab92c73a0c3c2216d85133739fc7e5}{\$header}
+\item 
+\hyperlink{classphpMorphy__Fsa_add5090376083f570d613bccdf81b207c}{\$fsa\_\-start}
+\item 
+\hyperlink{classphpMorphy__Fsa_a1b2d07e78560d45d7cc2d57098259e39}{\$root\_\-trans}
+\item 
+\hyperlink{classphpMorphy__Fsa_ad6d89b8764e576b3e9c7fd6370d2c239}{\$alphabet}
+\end{DoxyCompactItemize}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy__Fsa_aa65502d2b676afec522dd0831a26c82c}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!create@{create}}
+\index{create@{create}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}static phpMorphy\_\-Fsa::create (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Storage} \$}]{ storage, }
+\item[{\$}]{ lazy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classphpMorphy__Fsa_aa65502d2b676afec522dd0831a26c82c}
+\hypertarget{classphpMorphy__Fsa_aa4196900527053728cc90cae72391d90}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!createState@{createState}}
+\index{createState@{createState}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{createState}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::createState (
+\begin{DoxyParamCaption}
+\item[{\$}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_aa4196900527053728cc90cae72391d90}
+\hypertarget{classphpMorphy__Fsa_af1bc309ae78493942070ebab03587b60}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!getAlphabet@{getAlphabet}}
+\index{getAlphabet@{getAlphabet}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{getAlphabet}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::getAlphabet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa_af1bc309ae78493942070ebab03587b60}
+Returns alphabet i.e. all chars used in automat \begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_aebc9b423323d338941a5256d5dedf344}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa_ad8aee8877dc44e5d77b6fd347d8e3ceb}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!getRootState@{getRootState}}
+\index{getRootState@{getRootState}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{getRootState}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::getRootState (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa_ad8aee8877dc44e5d77b6fd347d8e3ceb}
+Returns root state object \begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_afc4bb4e25ae2dbd8fe2d1ff199c71020}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa_a25f03d8aa0e34aac0a6e7b5801d051c4}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!getRootStateIndex@{getRootStateIndex}}
+\index{getRootStateIndex@{getRootStateIndex}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{getRootStateIndex}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::getRootStateIndex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_a25f03d8aa0e34aac0a6e7b5801d051c4}
+\hypertarget{classphpMorphy__Fsa_ae81385b292af9644586aabab4030a50e}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!getRootTrans@{getRootTrans}}
+\index{getRootTrans@{getRootTrans}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{getRootTrans}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::getRootTrans (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Fsa_ae81385b292af9644586aabab4030a50e}
+Return root transition of fsa \begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{interfacephpMorphy__Fsa__Interface_a4d3a622efd660bb180073ff6ac2526bd}{phpMorphy\_\-Fsa\_\-Interface}.
+
+\hypertarget{classphpMorphy__Fsa_a70e1d1978abfd06a3805870674ea8ef2}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}}
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{phpMorphy\_\-Fsa}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::phpMorphy\_\-Fsa (
+\begin{DoxyParamCaption}
+\item[{\$}]{ resource, }
+\item[{\$}]{ header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_a70e1d1978abfd06a3805870674ea8ef2}
+\hypertarget{classphpMorphy__Fsa_a23aeca4ba49eba9967b4624017ec5256}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!readAlphabet@{readAlphabet}}
+\index{readAlphabet@{readAlphabet}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{readAlphabet}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::readAlphabet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}abstract, protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_a23aeca4ba49eba9967b4624017ec5256}
+
+
+Переопределяется в \hyperlink{classphpMorphy__Fsa__Sparse__File_a905a828550de9b4da7e47df777d994ef}{phpMorphy\_\-Fsa\_\-Sparse\_\-File}, \hyperlink{classphpMorphy__Fsa__Sparse__Mem_aa59923ba3d8d5243237059967e650b51}{phpMorphy\_\-Fsa\_\-Sparse\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Sparse__Shm_a3cd9ae256fe490c85fbe3345c29bbbe1}{phpMorphy\_\-Fsa\_\-Sparse\_\-Shm}, \hyperlink{classphpMorphy__Fsa__Tree__File_aefe149508efbb5089c084a16a5851476}{phpMorphy\_\-Fsa\_\-Tree\_\-File}, \hyperlink{classphpMorphy__Fsa__Tree__Mem_a71ef7b5a6918f620f4dd0a86dcc23e7f}{phpMorphy\_\-Fsa\_\-Tree\_\-Mem} и \hyperlink{classphpMorphy__Fsa__Tree__Shm_aaf82b48d16544d2d6f1ddfa841945247}{phpMorphy\_\-Fsa\_\-Tree\_\-Shm}.
+
+\hypertarget{classphpMorphy__Fsa_a2eff275f71bc526928dbcd8b69a0bc59}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!readHeader@{readHeader}}
+\index{readHeader@{readHeader}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{readHeader}]{\setlength{\rightskip}{0pt plus 5cm}static phpMorphy\_\-Fsa::readHeader (
+\begin{DoxyParamCaption}
+\item[{\$}]{ headerRaw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_a2eff275f71bc526928dbcd8b69a0bc59}
+\hypertarget{classphpMorphy__Fsa_af1029e3af5c917162c2edbf5ab728768}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!readRootTrans@{readRootTrans}}
+\index{readRootTrans@{readRootTrans}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{readRootTrans}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::readRootTrans (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}abstract, protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_af1029e3af5c917162c2edbf5ab728768}
+
+
+Переопределяется в \hyperlink{classphpMorphy__Fsa__Sparse__File_a069b3e5c1ca0ba25d9e495f12154aef6}{phpMorphy\_\-Fsa\_\-Sparse\_\-File}, \hyperlink{classphpMorphy__Fsa__Sparse__Mem_a44a5d8ae2efb3abb08986eb1f20afbaa}{phpMorphy\_\-Fsa\_\-Sparse\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Sparse__Shm_a7a2c397ab0e8cdf62b883ed2b0e4cfe7}{phpMorphy\_\-Fsa\_\-Sparse\_\-Shm}, \hyperlink{classphpMorphy__Fsa__Tree__File_afbaf674c1992e0f10fab8ccc730b5273}{phpMorphy\_\-Fsa\_\-Tree\_\-File}, \hyperlink{classphpMorphy__Fsa__Tree__Mem_a3cca131f8aa0d85fcab43ffc2889d6e2}{phpMorphy\_\-Fsa\_\-Tree\_\-Mem} и \hyperlink{classphpMorphy__Fsa__Tree__Shm_a60476891a44dfb1231f7a3f329d0f232}{phpMorphy\_\-Fsa\_\-Tree\_\-Shm}.
+
+\hypertarget{classphpMorphy__Fsa_a271549a73b003e166f688ad2dc8ba58d}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!validateHeader@{validateHeader}}
+\index{validateHeader@{validateHeader}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{validateHeader}]{\setlength{\rightskip}{0pt plus 5cm}static phpMorphy\_\-Fsa::validateHeader (
+\begin{DoxyParamCaption}
+\item[{\$}]{ header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_a271549a73b003e166f688ad2dc8ba58d}
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy__Fsa_ad6d89b8764e576b3e9c7fd6370d2c239}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!\$alphabet@{\$alphabet}}
+\index{\$alphabet@{\$alphabet}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{\$alphabet}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::\$alphabet\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_ad6d89b8764e576b3e9c7fd6370d2c239}
+\hypertarget{classphpMorphy__Fsa_add5090376083f570d613bccdf81b207c}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!\$fsa\_\-start@{\$fsa\_\-start}}
+\index{\$fsa\_\-start@{\$fsa\_\-start}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{\$fsa\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::\$fsa\_\-start\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_add5090376083f570d613bccdf81b207c}
+\hypertarget{classphpMorphy__Fsa_a50ab92c73a0c3c2216d85133739fc7e5}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!\$header@{\$header}}
+\index{\$header@{\$header}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{\$header}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::\$header\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_a50ab92c73a0c3c2216d85133739fc7e5}
+\hypertarget{classphpMorphy__Fsa_a6da96ac3059de2cea2527517aad7c046}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!\$resource@{\$resource}}
+\index{\$resource@{\$resource}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{\$resource}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::\$resource\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_a6da96ac3059de2cea2527517aad7c046}
+\hypertarget{classphpMorphy__Fsa_a1b2d07e78560d45d7cc2d57098259e39}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!\$root\_\-trans@{\$root\_\-trans}}
+\index{\$root\_\-trans@{\$root\_\-trans}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{\$root\_\-trans}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa::\$root\_\-trans\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Fsa_a1b2d07e78560d45d7cc2d57098259e39}
+\hypertarget{classphpMorphy__Fsa_afd061cb6c86a2fb54b531d61419ed527}{
+\index{phpMorphy\_\-Fsa@{phpMorphy\_\-Fsa}!HEADER\_\-SIZE@{HEADER\_\-SIZE}}
+\index{HEADER\_\-SIZE@{HEADER\_\-SIZE}!phpMorphy_Fsa@{phpMorphy\_\-Fsa}}
+\subsubsection[{HEADER\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy\_\-Fsa::HEADER\_\-SIZE} = 128}}
+\label{classphpMorphy__Fsa_afd061cb6c86a2fb54b531d61419ed527}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+fsa/\hyperlink{fsa_8php}{fsa.php}\end{DoxyCompactItemize}

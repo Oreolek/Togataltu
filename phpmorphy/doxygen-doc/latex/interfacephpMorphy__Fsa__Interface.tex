@@ -1,0 +1,203 @@
+\hypertarget{interfacephpMorphy__Fsa__Interface}{
+\section{Интерфейс phpMorphy\_\-Fsa\_\-Interface}
+\label{interfacephpMorphy__Fsa__Interface}\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+}
+Граф наследования:phpMorphy\_\-Fsa\_\-Interface:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.237113cm]{interfacephpMorphy__Fsa__Interface}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacephpMorphy__Fsa__Interface_a4d3a622efd660bb180073ff6ac2526bd}{getRootTrans} ()
+\item 
+\hyperlink{interfacephpMorphy__Fsa__Interface_afc4bb4e25ae2dbd8fe2d1ff199c71020}{getRootState} ()
+\item 
+\hyperlink{interfacephpMorphy__Fsa__Interface_aebc9b423323d338941a5256d5dedf344}{getAlphabet} ()
+\item 
+\hyperlink{interfacephpMorphy__Fsa__Interface_a6869cabce7a226247cc451b8e85cd4cf}{getAnnot} (\$trans)
+\item 
+\hyperlink{interfacephpMorphy__Fsa__Interface_a6e249e8e54705e4c1d9399ff0e491ce0}{walk} (\$trans, \$word, \$readAnnot=true)
+\item 
+\hyperlink{interfacephpMorphy__Fsa__Interface_a256ec25980bdb3d5275374225c6ef183}{collect} (\$startNode, \$callback, \$readAnnot=true, \$path= '')
+\item 
+\hyperlink{interfacephpMorphy__Fsa__Interface_adc761163b59286b33dec722702d227d3}{readState} (\$index)
+\item 
+\hyperlink{interfacephpMorphy__Fsa__Interface_a103abeef01d8e75da765fdd533a6dc00}{unpackTranses} (\$rawTranses)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+This file is part of \hyperlink{classphpMorphy}{phpMorphy} library
+
+Copyright c 2007-\/2008 Kamaev Vladimir $<$\href{mailto:heromantor@users.sourceforge.net}{\tt heromantor@users.sourceforge.net}$>$
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 59 Temple Place -\/ Suite 330, Boston, MA 02111-\/1307, USA. 
+
+\subsection{Методы}
+\hypertarget{interfacephpMorphy__Fsa__Interface_a256ec25980bdb3d5275374225c6ef183}{
+\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}!collect@{collect}}
+\index{collect@{collect}!phpMorphy_Fsa_Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+\subsubsection[{collect}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Interface::collect (
+\begin{DoxyParamCaption}
+\item[{\$}]{ startNode, }
+\item[{\$}]{ callback, }
+\item[{\$}]{ readAnnot = {\ttfamily true}, }
+\item[{\$}]{ path = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}
+\label{interfacephpMorphy__Fsa__Interface_a256ec25980bdb3d5275374225c6ef183}
+Traverse automat and collect words For each found words \$callback function invoked with follow arguments: call\_\-user\_\-func(\$callback, \$word, \$annot) when \$readAnnot is FALSE then \$annot arg is always NULL
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$startNode \item[{\em mixed}]\$callback callback function(in php format callback i.e. string or array(obj, method) or array(class, method) \item[{\em bool}]\$readAnnot read annot \item[{\em string}]\$path string to be append to all words \end{DoxyParams}
+
+
+Замещается в \hyperlink{classphpMorphy__Fsa__Sparse__File_a37a37dd510ab3f09abc80d6a47d0c3bf}{phpMorphy\_\-Fsa\_\-Sparse\_\-File}, \hyperlink{classphpMorphy__Fsa__Sparse__Mem_a615b89a41b05ed4114bb1560d1c6efd2}{phpMorphy\_\-Fsa\_\-Sparse\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Sparse__Shm_ad62039189b9e7d4bf37535ccaad8e811}{phpMorphy\_\-Fsa\_\-Sparse\_\-Shm}, \hyperlink{classphpMorphy__Fsa__Tree__File_ae27a6fa7a58dd2f2729669f770becd7b}{phpMorphy\_\-Fsa\_\-Tree\_\-File}, \hyperlink{classphpMorphy__Fsa__Tree__Mem_a455f1a304ae13cac2fd956466364a2e4}{phpMorphy\_\-Fsa\_\-Tree\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Tree__Shm_a8eaeb4a54d5f5f1dec19189e72e741b0}{phpMorphy\_\-Fsa\_\-Tree\_\-Shm} и \hyperlink{classphpMorphy__Fsa__Decorator_a207b7b3f35c2eb0d5e23905a02ed5e3d}{phpMorphy\_\-Fsa\_\-Decorator}.
+
+\hypertarget{interfacephpMorphy__Fsa__Interface_aebc9b423323d338941a5256d5dedf344}{
+\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}!getAlphabet@{getAlphabet}}
+\index{getAlphabet@{getAlphabet}!phpMorphy_Fsa_Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+\subsubsection[{getAlphabet}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Interface::getAlphabet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{interfacephpMorphy__Fsa__Interface_aebc9b423323d338941a5256d5dedf344}
+Returns alphabet i.e. all chars used in automat \begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещается в \hyperlink{classphpMorphy__Fsa_af1bc309ae78493942070ebab03587b60}{phpMorphy\_\-Fsa} и \hyperlink{classphpMorphy__Fsa__Decorator_ab817952e793cdb42668409b761758975}{phpMorphy\_\-Fsa\_\-Decorator}.
+
+\hypertarget{interfacephpMorphy__Fsa__Interface_a6869cabce7a226247cc451b8e85cd4cf}{
+\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}!getAnnot@{getAnnot}}
+\index{getAnnot@{getAnnot}!phpMorphy_Fsa_Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+\subsubsection[{getAnnot}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Interface::getAnnot (
+\begin{DoxyParamCaption}
+\item[{\$}]{ trans}
+\end{DoxyParamCaption}
+)}}
+\label{interfacephpMorphy__Fsa__Interface_a6869cabce7a226247cc451b8e85cd4cf}
+Return annotation for given transition(if annotation flag is set for given trans)
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em array}]\$trans \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+string 
+\end{DoxyReturn}
+
+
+Замещается в \hyperlink{classphpMorphy__Fsa__Sparse__File_aa87d98ae42ddbb3bc70c0fdaf938a927}{phpMorphy\_\-Fsa\_\-Sparse\_\-File}, \hyperlink{classphpMorphy__Fsa__Sparse__Mem_a402b28c703c48271b990253e055e53a4}{phpMorphy\_\-Fsa\_\-Sparse\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Sparse__Shm_a3fab1babdd6491ca1aa7082565b6e890}{phpMorphy\_\-Fsa\_\-Sparse\_\-Shm}, \hyperlink{classphpMorphy__Fsa__Tree__File_a1d4631049297d05fe5917f4cfba5bb67}{phpMorphy\_\-Fsa\_\-Tree\_\-File}, \hyperlink{classphpMorphy__Fsa__Tree__Mem_a81511a132fe66989384992a7beec6a0c}{phpMorphy\_\-Fsa\_\-Tree\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Tree__Shm_a595257015feb1778ce0a33005f3f6ed2}{phpMorphy\_\-Fsa\_\-Tree\_\-Shm} и \hyperlink{classphpMorphy__Fsa__Decorator_aa67e667c49cbfc163c885bf3cc9a448d}{phpMorphy\_\-Fsa\_\-Decorator}.
+
+\hypertarget{interfacephpMorphy__Fsa__Interface_afc4bb4e25ae2dbd8fe2d1ff199c71020}{
+\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}!getRootState@{getRootState}}
+\index{getRootState@{getRootState}!phpMorphy_Fsa_Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+\subsubsection[{getRootState}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Interface::getRootState (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{interfacephpMorphy__Fsa__Interface_afc4bb4e25ae2dbd8fe2d1ff199c71020}
+Returns root state object \begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Замещается в \hyperlink{classphpMorphy__Fsa_ad8aee8877dc44e5d77b6fd347d8e3ceb}{phpMorphy\_\-Fsa} и \hyperlink{classphpMorphy__Fsa__Decorator_a49ee10a47a3d3be7782ec31b97da357d}{phpMorphy\_\-Fsa\_\-Decorator}.
+
+\hypertarget{interfacephpMorphy__Fsa__Interface_a4d3a622efd660bb180073ff6ac2526bd}{
+\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}!getRootTrans@{getRootTrans}}
+\index{getRootTrans@{getRootTrans}!phpMorphy_Fsa_Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+\subsubsection[{getRootTrans}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Interface::getRootTrans (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{interfacephpMorphy__Fsa__Interface_a4d3a622efd660bb180073ff6ac2526bd}
+Return root transition of fsa \begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещается в \hyperlink{classphpMorphy__Fsa_ae81385b292af9644586aabab4030a50e}{phpMorphy\_\-Fsa} и \hyperlink{classphpMorphy__Fsa__Decorator_a6f57e120a5763deda17bdb5f96a01290}{phpMorphy\_\-Fsa\_\-Decorator}.
+
+\hypertarget{interfacephpMorphy__Fsa__Interface_adc761163b59286b33dec722702d227d3}{
+\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}!readState@{readState}}
+\index{readState@{readState}!phpMorphy_Fsa_Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+\subsubsection[{readState}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Interface::readState (
+\begin{DoxyParamCaption}
+\item[{\$}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{interfacephpMorphy__Fsa__Interface_adc761163b59286b33dec722702d227d3}
+Read state at given index
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em int}]\$index \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещается в \hyperlink{classphpMorphy__Fsa__Sparse__File_ad1d78bc2f34f2bf0b1c68505338fed8b}{phpMorphy\_\-Fsa\_\-Sparse\_\-File}, \hyperlink{classphpMorphy__Fsa__Sparse__Mem_a1847ff1d9e54a2d27714cdd8f433b092}{phpMorphy\_\-Fsa\_\-Sparse\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Sparse__Shm_acb74a36605ac899a86241eddb70943bb}{phpMorphy\_\-Fsa\_\-Sparse\_\-Shm}, \hyperlink{classphpMorphy__Fsa__Tree__File_a02c64d8cfc4b5c4cbd936e61bdfcf0b0}{phpMorphy\_\-Fsa\_\-Tree\_\-File}, \hyperlink{classphpMorphy__Fsa__Tree__Mem_ab8f68a9eb5874f8ee254248a654f9776}{phpMorphy\_\-Fsa\_\-Tree\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Tree__Shm_a30f23df9502c79e270655efede407fc3}{phpMorphy\_\-Fsa\_\-Tree\_\-Shm} и \hyperlink{classphpMorphy__Fsa__Decorator_ae7a286424b3d2d24eb0b64fa2621d83f}{phpMorphy\_\-Fsa\_\-Decorator}.
+
+\hypertarget{interfacephpMorphy__Fsa__Interface_a103abeef01d8e75da765fdd533a6dc00}{
+\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}!unpackTranses@{unpackTranses}}
+\index{unpackTranses@{unpackTranses}!phpMorphy_Fsa_Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+\subsubsection[{unpackTranses}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Interface::unpackTranses (
+\begin{DoxyParamCaption}
+\item[{\$}]{ rawTranses}
+\end{DoxyParamCaption}
+)}}
+\label{interfacephpMorphy__Fsa__Interface_a103abeef01d8e75da765fdd533a6dc00}
+Unpack transition from binary form to array
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$rawTranses may be array for convert more than one transitions \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+
+
+Замещается в \hyperlink{classphpMorphy__Fsa__Sparse__File_a8dda9eff14caf996d36462778649c523}{phpMorphy\_\-Fsa\_\-Sparse\_\-File}, \hyperlink{classphpMorphy__Fsa__Sparse__Mem_a2f3d9080c9f6d42261eb8bf10f5c6bf3}{phpMorphy\_\-Fsa\_\-Sparse\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Sparse__Shm_a2f60bef354ea381f2da66a6d7d08bb3a}{phpMorphy\_\-Fsa\_\-Sparse\_\-Shm}, \hyperlink{classphpMorphy__Fsa__Tree__File_accf424d1903ca14e71c155172c19c39d}{phpMorphy\_\-Fsa\_\-Tree\_\-File}, \hyperlink{classphpMorphy__Fsa__Tree__Mem_a239c3b489fde8d245315756c8f2af8e6}{phpMorphy\_\-Fsa\_\-Tree\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Tree__Shm_aeb0360191d49a35a7550e65c28a55636}{phpMorphy\_\-Fsa\_\-Tree\_\-Shm} и \hyperlink{classphpMorphy__Fsa__Decorator_a4bdcae49dab742086c961f73e0380254}{phpMorphy\_\-Fsa\_\-Decorator}.
+
+\hypertarget{interfacephpMorphy__Fsa__Interface_a6e249e8e54705e4c1d9399ff0e491ce0}{
+\index{phpMorphy\_\-Fsa\_\-Interface@{phpMorphy\_\-Fsa\_\-Interface}!walk@{walk}}
+\index{walk@{walk}!phpMorphy_Fsa_Interface@{phpMorphy\_\-Fsa\_\-Interface}}
+\subsubsection[{walk}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Fsa\_\-Interface::walk (
+\begin{DoxyParamCaption}
+\item[{\$}]{ trans, }
+\item[{\$}]{ word, }
+\item[{\$}]{ readAnnot = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{interfacephpMorphy__Fsa__Interface_a6e249e8e54705e4c1d9399ff0e491ce0}
+Find word in automat
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$trans starting transition \item[{\em string}]\$word \item[{\em bool}]\$readAnnot read annot or simple check if word exists in automat \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+bool TRUE if word is found, FALSE otherwise 
+\end{DoxyReturn}
+
+
+Замещается в \hyperlink{classphpMorphy__Fsa__Sparse__File_a4995b3f44bde356009c67df7afed2c5a}{phpMorphy\_\-Fsa\_\-Sparse\_\-File}, \hyperlink{classphpMorphy__Fsa__Sparse__Mem_a21d59e28eaf3ae4061d17d27c7beff71}{phpMorphy\_\-Fsa\_\-Sparse\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Sparse__Shm_a2203c12e49953e0b6b6b888f74e06736}{phpMorphy\_\-Fsa\_\-Sparse\_\-Shm}, \hyperlink{classphpMorphy__Fsa__Tree__File_ab82328d726f4474c070fefb7ee342601}{phpMorphy\_\-Fsa\_\-Tree\_\-File}, \hyperlink{classphpMorphy__Fsa__Tree__Mem_a668d55a99a2f866173811f85a1b278c1}{phpMorphy\_\-Fsa\_\-Tree\_\-Mem}, \hyperlink{classphpMorphy__Fsa__Tree__Shm_abf846ead411f058f082ee84ffc16a154}{phpMorphy\_\-Fsa\_\-Tree\_\-Shm} и \hyperlink{classphpMorphy__Fsa__Decorator_a18393b870712e635c13c9f18780311e9}{phpMorphy\_\-Fsa\_\-Decorator}.
+
+
+
+Объявления и описания членов интерфейса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+fsa/\hyperlink{fsa_8php}{fsa.php}\end{DoxyCompactItemize}

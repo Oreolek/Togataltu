@@ -1,0 +1,880 @@
+\hypertarget{classphpMorphy}{
+\section{Класс phpMorphy}
+\label{classphpMorphy}\index{phpMorphy@{phpMorphy}}
+}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy_abbc827157f80407ebaacbfbabafea5b9}{\_\-\_\-construct} (\$dir, \$lang=null, \$options=array())
+\item 
+\hyperlink{classphpMorphy_ac204e610811ccb56dc8ac3b15836352c}{getCommonMorphier} ()
+\item 
+\hyperlink{classphpMorphy_a2b9f94dc327e179c72301a20e5f8198b}{getPredictBySuffixMorphier} ()
+\item 
+\hyperlink{classphpMorphy_aefd19f95880f79f7f42a7ab2805aa188}{getPredictByDatabaseMorphier} ()
+\item 
+\hyperlink{classphpMorphy_a75415fda8b50defd5b448197e2531c06}{getBulkMorphier} ()
+\item 
+\hyperlink{classphpMorphy_a25acea38c2d40849d3b4e98c41eea443}{getEncoding} ()
+\item 
+\hyperlink{classphpMorphy_a7c522cd19ec8d9d537a56719d9e83780}{getLocale} ()
+\item 
+\hyperlink{classphpMorphy_a03ad597a07619294a843a7d3e1c7f66b}{getGrammemsProvider} ()
+\item 
+\hyperlink{classphpMorphy_abbafbd0a020b3d8ff51e1c6e25667a5e}{getDefaultGrammemsProvider} ()
+\item 
+\hyperlink{classphpMorphy_a2ca6ddade65efffb106f2156c67bb66b}{getShmCache} ()
+\item 
+\hyperlink{classphpMorphy_af19e83bcc40a6f547b60bc9c46be05eb}{isLastPredicted} ()
+\item 
+\hyperlink{classphpMorphy_a92b63c211019dca58e8e6d6de004756b}{getLastPredictionType} ()
+\item 
+\hyperlink{classphpMorphy_a5f45142b748c649cb29fc8e117e759e6}{findWord} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_aefeaecaf9831657a570a28d8529be006}{lemmatize} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_a7a4e83b1017ee422e96429a1bd6fd8f7}{getBaseForm} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_aa0aa63e9a5e213003fe83a34d5db7277}{getAllForms} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_a71545506bc0c9601b1e5d7d416f22956}{getPseudoRoot} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_a561c76269a2b81be6757a20511ee60fb}{getPartOfSpeech} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_ab9bba681c54e6251b15844565de6f808}{getAllFormsWithAncodes} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_afdc6eb10f33acccfef37b08512dde326}{getAllFormsWithGramInfo} (\$word, \$asText=true, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_a82b2c781e98354d08e213a91a3788e87}{getAncode} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_ae69f1aa57ddaf885e08b9088829ba979}{getGramInfo} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_a1330731d198f4aef740f8b1226faa848}{getGramInfoMergeForms} (\$word, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_a00000431efc09c2ccef96ee1318089c7}{castFormByAncode} (\$word, \$ancode, \$commonAncode=null, \$returnOnlyWord=false, \$callback=null, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_aafad3b0dee423fa155a896f046e87349}{castFormByGramInfo} (\$word, \$partOfSpeech, \$grammems, \$returnOnlyWord=false, \$callback=null, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_a5300845807b42f4a1d935a04faaf7f67}{castFormByPattern} (\$word, \$patternWord, \hyperlink{interfacephpMorphy__GrammemsProvider__Interface}{phpMorphy\_\-GrammemsProvider\_\-Interface} \$grammemsProvider=null, \$returnOnlyWord=false, \$callback=null, \$type=self::NORMAL)
+\item 
+\hyperlink{classphpMorphy_a8a676fab9cb0de61c9482f795eb38dea}{\_\-\_\-get} (\$name)
+\item 
+\hyperlink{classphpMorphy_a8ad51a075ccbc40baa9a5793a5d89125}{createGrammemsProvider} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classphpMorphy_a919a599c76ec4bb2a5f284d9a1b0da2e}{RESOLVE\_\-ANCODES\_\-AS\_\-TEXT} = 0
+\item 
+const \hyperlink{classphpMorphy_a9cfb01a8a056c9322e3bb3680a8b921c}{RESOLVE\_\-ANCODES\_\-AS\_\-DIALING} = 1
+\item 
+const \hyperlink{classphpMorphy_a7619b0422b061a198516617ab96673f2}{RESOLVE\_\-ANCODES\_\-AS\_\-INT} = 2
+\item 
+const \hyperlink{classphpMorphy_a8cfde1e320c3114a46b5a250cfa2c368}{NORMAL} = 0
+\item 
+const \hyperlink{classphpMorphy_a96773a087cbcf69f52e1cddad0060c3d}{IGNORE\_\-PREDICT} = 2
+\item 
+const \hyperlink{classphpMorphy_a2ab6f41bcb2c2bb31dd1f7f92f1b38ee}{ONLY\_\-PREDICT} = 3
+\item 
+const \hyperlink{classphpMorphy_a9359de1c31adfc1c10894cbead48e2ba}{PREDICT\_\-BY\_\-NONE} = 'none'
+\item 
+const \hyperlink{classphpMorphy_a1c02f9420ccc29ac4e2f80bf3688994d}{PREDICT\_\-BY\_\-SUFFIX} = 'by\_\-suffix'
+\item 
+const \hyperlink{classphpMorphy_ada1e5f1e0eb2de867e273e23a4022955}{PREDICT\_\-BY\_\-DB} = 'by\_\-db'
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy_a0e6dfbda7127ec57b65714463f84d703}{getAnnotForWord} (\$word, \$type)
+\item 
+\hyperlink{classphpMorphy_aa9fc29c9fede88464b3696a20fb0ea7f}{processWordsCollection} (\hyperlink{classphpMorphy__WordDescriptor__Collection}{phpMorphy\_\-WordDescriptor\_\-Collection} \$collection, \$asText)
+\item 
+\hyperlink{classphpMorphy_a5fce126e953fc4317a2ffe9c39fc01b7}{invoke} (\$method, \$word, \$type)
+\item 
+\hyperlink{classphpMorphy_af055c5fae7f8de6c37a011e86594995f}{predictWord} (\$method, \$word)
+\item 
+\hyperlink{classphpMorphy_ae5eba4519ae7d1692314a785fea4d5fd}{initNewStyle} (phpMorphy\_\-FilesBundle \$bundle, \$options)
+\item 
+\hyperlink{classphpMorphy_a645c8acabfc4300ef5a723201e01d138}{createCommonSource} (phpMorphy\_\-FilesBundle \$bundle, \$opts)
+\item 
+\hyperlink{classphpMorphy_af11804fd579bc168811d9bb1cfb8afff}{getDbaHandlerName} (\$name)
+\item 
+\hyperlink{classphpMorphy_ab8d41deae8cbf5c7b378105c466e2faa}{initOldStyle} (phpMorphy\_\-FilesBundle \$bundle, \$options)
+\item 
+\hyperlink{classphpMorphy_a3ba28dac1c785398ae1a6c112a2f884e}{repairOldOptions} (\$options)
+\item 
+\hyperlink{classphpMorphy_ade6f92bfb7f236ca01a37c7ea3edba06}{repairSourceOptions} (\$options)
+\item 
+\hyperlink{classphpMorphy_a968bfb227dd3b721632b01d92d56f3b6}{repairOptions} (\$options)
+\item 
+\hyperlink{classphpMorphy_afbdc7fb761786bc1c16a8e8df6db5298}{createWordDescriptorSerializer} ()
+\item 
+\hyperlink{classphpMorphy_a85af9a85d71c81646e8d5e2babc885cf}{createFilesBundle} (\$dir, \$lang)
+\item 
+\hyperlink{classphpMorphy_afa44e3844366b8ca77a91b7e2de2a17f}{createStorageFactory} (\$options)
+\item 
+\hyperlink{classphpMorphy_ad2020c1fdba569d53bec3d7544fc6e91}{createFsa} (\hyperlink{classphpMorphy__Storage}{phpMorphy\_\-Storage} \$storage, \$lazy)
+\item 
+\hyperlink{classphpMorphy_a9150b2ee5315b69b001228ed1c62a3d8}{createGramInfo} (\hyperlink{classphpMorphy__Storage}{phpMorphy\_\-Storage} \$graminfoFile, phpMorphy\_\-FilesBundle \$bundle)
+\item 
+\hyperlink{classphpMorphy_ab0acf5da86a1c81a1e6e9e66b352994d}{createGramTab} (\hyperlink{classphpMorphy__Storage}{phpMorphy\_\-Storage} \$storage)
+\item 
+\hyperlink{classphpMorphy_a683ab506c0fd37429b813fd3b7b5eb4a}{createAncodesResolverInternal} (\hyperlink{interfacephpMorphy__GramTab__Interface}{phpMorphy\_\-GramTab\_\-Interface} \$gramtab, phpMorphy\_\-FilesBundle \$bundle)
+\item 
+\hyperlink{classphpMorphy_ad63d33364788bcd3bedaa3a2ae17052f}{createAncodesResolver} (\hyperlink{interfacephpMorphy__GramTab__Interface}{phpMorphy\_\-GramTab\_\-Interface} \$gramtab, phpMorphy\_\-FilesBundle \$bundle, \$lazy)
+\item 
+\hyperlink{classphpMorphy_ae70d97af2dd18915079bc5d03e3a22e4}{createMorphierHelper} (\hyperlink{interfacephpMorphy__GramInfo__Interace}{phpMorphy\_\-GramInfo\_\-Interace} \$graminfo, \hyperlink{interfacephpMorphy__GramTab__Interface}{phpMorphy\_\-GramTab\_\-Interface} \$gramtab, \$graminfoAsText, phpMorphy\_\-FilesBundle \$bundle)
+\item 
+\hyperlink{classphpMorphy_a265fb0837cb5d0e66c4b6061c499fd36}{createCommonMorphier} (\hyperlink{interfacephpMorphy__Fsa__Interface}{phpMorphy\_\-Fsa\_\-Interface} \$fsa, \hyperlink{classphpMorphy__Morphier__Helper}{phpMorphy\_\-Morphier\_\-Helper} \$helper)
+\item 
+\hyperlink{classphpMorphy_aa12a75d7145a626cfb6686b5831be174}{createBulkMorphier} (\hyperlink{interfacephpMorphy__Fsa__Interface}{phpMorphy\_\-Fsa\_\-Interface} \$fsa, \hyperlink{classphpMorphy__Morphier__Helper}{phpMorphy\_\-Morphier\_\-Helper} \$helper)
+\item 
+\hyperlink{classphpMorphy_af14b15fccc96d276854f469eafecebf1}{createPredictByDbMorphier} (\hyperlink{interfacephpMorphy__Fsa__Interface}{phpMorphy\_\-Fsa\_\-Interface} \$fsa, \hyperlink{classphpMorphy__Morphier__Helper}{phpMorphy\_\-Morphier\_\-Helper} \$helper)
+\item 
+\hyperlink{classphpMorphy_add68f1a07119588887165ae221a59e06}{createPredictBySuffixMorphier} (\hyperlink{interfacephpMorphy__Fsa__Interface}{phpMorphy\_\-Fsa\_\-Interface} \$fsa, \hyperlink{classphpMorphy__Morphier__Helper}{phpMorphy\_\-Morphier\_\-Helper} \$helper)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy_aeefc33700147a976cd183c09aaef36e2}{\$storage\_\-factory}
+\item 
+\hyperlink{classphpMorphy_a132dd5676856185b4a2a7b11cf112de4}{\$common\_\-fsa}
+\item 
+\hyperlink{classphpMorphy_a53dffe78d2981dfe4e82ba6df48629b9}{\$common\_\-source}
+\item 
+\hyperlink{classphpMorphy_a1c65e7268298d0c2a800fb5db637dce5}{\$predict\_\-fsa}
+\item 
+\hyperlink{classphpMorphy_a473b5901c47b7aa079e27d24d3da07af}{\$options}
+\item 
+\hyperlink{classphpMorphy_a93e1e71ce6b401f349e7ff0f358af741}{\$helper}
+\item 
+\hyperlink{classphpMorphy_acb23ae8a5be14476598268c8f48894f0}{\$last\_\-prediction\_\-type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classphpMorphy_abbc827157f80407ebaacbfbabafea5b9}{
+\index{phpMorphy@{phpMorphy}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!phpMorphy@{phpMorphy}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{\$}]{ dir, }
+\item[{\$}]{ lang = {\ttfamily null}, }
+\item[{\$}]{ options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_abbc827157f80407ebaacbfbabafea5b9}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy_a8a676fab9cb0de61c9482f795eb38dea}{
+\index{phpMorphy@{phpMorphy}!\_\-\_\-get@{\_\-\_\-get}}
+\index{\_\-\_\-get@{\_\-\_\-get}!phpMorphy@{phpMorphy}}
+\subsubsection[{\_\-\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\_\-\_\-get (
+\begin{DoxyParamCaption}
+\item[{\$}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a8a676fab9cb0de61c9482f795eb38dea}
+\hypertarget{classphpMorphy_a00000431efc09c2ccef96ee1318089c7}{
+\index{phpMorphy@{phpMorphy}!castFormByAncode@{castFormByAncode}}
+\index{castFormByAncode@{castFormByAncode}!phpMorphy@{phpMorphy}}
+\subsubsection[{castFormByAncode}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::castFormByAncode (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ ancode, }
+\item[{\$}]{ commonAncode = {\ttfamily null}, }
+\item[{\$}]{ returnOnlyWord = {\ttfamily false}, }
+\item[{\$}]{ callback = {\ttfamily null}, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a00000431efc09c2ccef96ee1318089c7}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em string}]\$word \item[{\em mixed}]\$ancode \item[{\em mixed}]\$commonAncode \item[{\em bool}]\$returnOnlyWord \item[{\em mixed}]\$callback \item[{\em mixed}]\$type \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_aafad3b0dee423fa155a896f046e87349}{
+\index{phpMorphy@{phpMorphy}!castFormByGramInfo@{castFormByGramInfo}}
+\index{castFormByGramInfo@{castFormByGramInfo}!phpMorphy@{phpMorphy}}
+\subsubsection[{castFormByGramInfo}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::castFormByGramInfo (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ partOfSpeech, }
+\item[{\$}]{ grammems, }
+\item[{\$}]{ returnOnlyWord = {\ttfamily false}, }
+\item[{\$}]{ callback = {\ttfamily null}, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_aafad3b0dee423fa155a896f046e87349}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em string}]\$word \item[{\em mixed}]\$partOfSpeech \item[{\em array}]\$grammems \item[{\em bool}]\$returnOnlyWord \item[{\em mixed}]\$callback \item[{\em mixed}]\$type \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a5300845807b42f4a1d935a04faaf7f67}{
+\index{phpMorphy@{phpMorphy}!castFormByPattern@{castFormByPattern}}
+\index{castFormByPattern@{castFormByPattern}!phpMorphy@{phpMorphy}}
+\subsubsection[{castFormByPattern}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::castFormByPattern (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ patternWord, }
+\item[{{\bf phpMorphy\_\-GrammemsProvider\_\-Interface} \$}]{ grammemsProvider = {\ttfamily null}, }
+\item[{\$}]{ returnOnlyWord = {\ttfamily false}, }
+\item[{\$}]{ callback = {\ttfamily null}, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a5300845807b42f4a1d935a04faaf7f67}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em string}]\$word \item[{\em string}]\$patternWord \item[{\em mixed}]\$essentialGrammems \item[{\em bool}]\$returnOnlyWord \item[{\em mixed}]\$callback \item[{\em mixed}]\$type \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_ad63d33364788bcd3bedaa3a2ae17052f}{
+\index{phpMorphy@{phpMorphy}!createAncodesResolver@{createAncodesResolver}}
+\index{createAncodesResolver@{createAncodesResolver}!phpMorphy@{phpMorphy}}
+\subsubsection[{createAncodesResolver}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createAncodesResolver (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-GramTab\_\-Interface} \$}]{ gramtab, }
+\item[{phpMorphy\_\-FilesBundle \$}]{ bundle, }
+\item[{\$}]{ lazy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_ad63d33364788bcd3bedaa3a2ae17052f}
+\hypertarget{classphpMorphy_a683ab506c0fd37429b813fd3b7b5eb4a}{
+\index{phpMorphy@{phpMorphy}!createAncodesResolverInternal@{createAncodesResolverInternal}}
+\index{createAncodesResolverInternal@{createAncodesResolverInternal}!phpMorphy@{phpMorphy}}
+\subsubsection[{createAncodesResolverInternal}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createAncodesResolverInternal (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-GramTab\_\-Interface} \$}]{ gramtab, }
+\item[{phpMorphy\_\-FilesBundle \$}]{ bundle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a683ab506c0fd37429b813fd3b7b5eb4a}
+\hypertarget{classphpMorphy_aa12a75d7145a626cfb6686b5831be174}{
+\index{phpMorphy@{phpMorphy}!createBulkMorphier@{createBulkMorphier}}
+\index{createBulkMorphier@{createBulkMorphier}!phpMorphy@{phpMorphy}}
+\subsubsection[{createBulkMorphier}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createBulkMorphier (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Fsa\_\-Interface} \$}]{ fsa, }
+\item[{{\bf phpMorphy\_\-Morphier\_\-Helper} \$}]{ helper}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_aa12a75d7145a626cfb6686b5831be174}
+\hypertarget{classphpMorphy_a265fb0837cb5d0e66c4b6061c499fd36}{
+\index{phpMorphy@{phpMorphy}!createCommonMorphier@{createCommonMorphier}}
+\index{createCommonMorphier@{createCommonMorphier}!phpMorphy@{phpMorphy}}
+\subsubsection[{createCommonMorphier}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createCommonMorphier (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Fsa\_\-Interface} \$}]{ fsa, }
+\item[{{\bf phpMorphy\_\-Morphier\_\-Helper} \$}]{ helper}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a265fb0837cb5d0e66c4b6061c499fd36}
+\hypertarget{classphpMorphy_a645c8acabfc4300ef5a723201e01d138}{
+\index{phpMorphy@{phpMorphy}!createCommonSource@{createCommonSource}}
+\index{createCommonSource@{createCommonSource}!phpMorphy@{phpMorphy}}
+\subsubsection[{createCommonSource}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createCommonSource (
+\begin{DoxyParamCaption}
+\item[{phpMorphy\_\-FilesBundle \$}]{ bundle, }
+\item[{\$}]{ opts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a645c8acabfc4300ef5a723201e01d138}
+\hypertarget{classphpMorphy_a85af9a85d71c81646e8d5e2babc885cf}{
+\index{phpMorphy@{phpMorphy}!createFilesBundle@{createFilesBundle}}
+\index{createFilesBundle@{createFilesBundle}!phpMorphy@{phpMorphy}}
+\subsubsection[{createFilesBundle}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createFilesBundle (
+\begin{DoxyParamCaption}
+\item[{\$}]{ dir, }
+\item[{\$}]{ lang}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a85af9a85d71c81646e8d5e2babc885cf}
+\hypertarget{classphpMorphy_ad2020c1fdba569d53bec3d7544fc6e91}{
+\index{phpMorphy@{phpMorphy}!createFsa@{createFsa}}
+\index{createFsa@{createFsa}!phpMorphy@{phpMorphy}}
+\subsubsection[{createFsa}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createFsa (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Storage} \$}]{ storage, }
+\item[{\$}]{ lazy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_ad2020c1fdba569d53bec3d7544fc6e91}
+\hypertarget{classphpMorphy_a9150b2ee5315b69b001228ed1c62a3d8}{
+\index{phpMorphy@{phpMorphy}!createGramInfo@{createGramInfo}}
+\index{createGramInfo@{createGramInfo}!phpMorphy@{phpMorphy}}
+\subsubsection[{createGramInfo}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createGramInfo (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Storage} \$}]{ graminfoFile, }
+\item[{phpMorphy\_\-FilesBundle \$}]{ bundle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a9150b2ee5315b69b001228ed1c62a3d8}
+\hypertarget{classphpMorphy_a8ad51a075ccbc40baa9a5793a5d89125}{
+\index{phpMorphy@{phpMorphy}!createGrammemsProvider@{createGrammemsProvider}}
+\index{createGrammemsProvider@{createGrammemsProvider}!phpMorphy@{phpMorphy}}
+\subsubsection[{createGrammemsProvider}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createGrammemsProvider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a8ad51a075ccbc40baa9a5793a5d89125}
+\hypertarget{classphpMorphy_ab0acf5da86a1c81a1e6e9e66b352994d}{
+\index{phpMorphy@{phpMorphy}!createGramTab@{createGramTab}}
+\index{createGramTab@{createGramTab}!phpMorphy@{phpMorphy}}
+\subsubsection[{createGramTab}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createGramTab (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Storage} \$}]{ storage}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_ab0acf5da86a1c81a1e6e9e66b352994d}
+\hypertarget{classphpMorphy_ae70d97af2dd18915079bc5d03e3a22e4}{
+\index{phpMorphy@{phpMorphy}!createMorphierHelper@{createMorphierHelper}}
+\index{createMorphierHelper@{createMorphierHelper}!phpMorphy@{phpMorphy}}
+\subsubsection[{createMorphierHelper}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createMorphierHelper (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-GramInfo\_\-Interace} \$}]{ graminfo, }
+\item[{{\bf phpMorphy\_\-GramTab\_\-Interface} \$}]{ gramtab, }
+\item[{\$}]{ graminfoAsText, }
+\item[{phpMorphy\_\-FilesBundle \$}]{ bundle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_ae70d97af2dd18915079bc5d03e3a22e4}
+\hypertarget{classphpMorphy_af14b15fccc96d276854f469eafecebf1}{
+\index{phpMorphy@{phpMorphy}!createPredictByDbMorphier@{createPredictByDbMorphier}}
+\index{createPredictByDbMorphier@{createPredictByDbMorphier}!phpMorphy@{phpMorphy}}
+\subsubsection[{createPredictByDbMorphier}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createPredictByDbMorphier (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Fsa\_\-Interface} \$}]{ fsa, }
+\item[{{\bf phpMorphy\_\-Morphier\_\-Helper} \$}]{ helper}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_af14b15fccc96d276854f469eafecebf1}
+\hypertarget{classphpMorphy_add68f1a07119588887165ae221a59e06}{
+\index{phpMorphy@{phpMorphy}!createPredictBySuffixMorphier@{createPredictBySuffixMorphier}}
+\index{createPredictBySuffixMorphier@{createPredictBySuffixMorphier}!phpMorphy@{phpMorphy}}
+\subsubsection[{createPredictBySuffixMorphier}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createPredictBySuffixMorphier (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-Fsa\_\-Interface} \$}]{ fsa, }
+\item[{{\bf phpMorphy\_\-Morphier\_\-Helper} \$}]{ helper}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_add68f1a07119588887165ae221a59e06}
+\hypertarget{classphpMorphy_afa44e3844366b8ca77a91b7e2de2a17f}{
+\index{phpMorphy@{phpMorphy}!createStorageFactory@{createStorageFactory}}
+\index{createStorageFactory@{createStorageFactory}!phpMorphy@{phpMorphy}}
+\subsubsection[{createStorageFactory}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createStorageFactory (
+\begin{DoxyParamCaption}
+\item[{\$}]{ options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_afa44e3844366b8ca77a91b7e2de2a17f}
+\hypertarget{classphpMorphy_afbdc7fb761786bc1c16a8e8df6db5298}{
+\index{phpMorphy@{phpMorphy}!createWordDescriptorSerializer@{createWordDescriptorSerializer}}
+\index{createWordDescriptorSerializer@{createWordDescriptorSerializer}!phpMorphy@{phpMorphy}}
+\subsubsection[{createWordDescriptorSerializer}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::createWordDescriptorSerializer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_afbdc7fb761786bc1c16a8e8df6db5298}
+\hypertarget{classphpMorphy_a5f45142b748c649cb29fc8e117e759e6}{
+\index{phpMorphy@{phpMorphy}!findWord@{findWord}}
+\index{findWord@{findWord}!phpMorphy@{phpMorphy}}
+\subsubsection[{findWord}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::findWord (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a5f45142b748c649cb29fc8e117e759e6}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+\hyperlink{classphpMorphy__WordDescriptor__Collection}{phpMorphy\_\-WordDescriptor\_\-Collection} 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_aa0aa63e9a5e213003fe83a34d5db7277}{
+\index{phpMorphy@{phpMorphy}!getAllForms@{getAllForms}}
+\index{getAllForms@{getAllForms}!phpMorphy@{phpMorphy}}
+\subsubsection[{getAllForms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getAllForms (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_aa0aa63e9a5e213003fe83a34d5db7277}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_ab9bba681c54e6251b15844565de6f808}{
+\index{phpMorphy@{phpMorphy}!getAllFormsWithAncodes@{getAllFormsWithAncodes}}
+\index{getAllFormsWithAncodes@{getAllFormsWithAncodes}!phpMorphy@{phpMorphy}}
+\subsubsection[{getAllFormsWithAncodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getAllFormsWithAncodes (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_ab9bba681c54e6251b15844565de6f808}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_afdc6eb10f33acccfef37b08512dde326}{
+\index{phpMorphy@{phpMorphy}!getAllFormsWithGramInfo@{getAllFormsWithGramInfo}}
+\index{getAllFormsWithGramInfo@{getAllFormsWithGramInfo}!phpMorphy@{phpMorphy}}
+\subsubsection[{getAllFormsWithGramInfo}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getAllFormsWithGramInfo (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ asText = {\ttfamily true}, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_afdc6eb10f33acccfef37b08512dde326}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings  bool \$asText -\/ represent graminfo as text or ancodes \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a82b2c781e98354d08e213a91a3788e87}{
+\index{phpMorphy@{phpMorphy}!getAncode@{getAncode}}
+\index{getAncode@{getAncode}!phpMorphy@{phpMorphy}}
+\subsubsection[{getAncode}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getAncode (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a82b2c781e98354d08e213a91a3788e87}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a0e6dfbda7127ec57b65714463f84d703}{
+\index{phpMorphy@{phpMorphy}!getAnnotForWord@{getAnnotForWord}}
+\index{getAnnotForWord@{getAnnotForWord}!phpMorphy@{phpMorphy}}
+\subsubsection[{getAnnotForWord}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getAnnotForWord (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a0e6dfbda7127ec57b65714463f84d703}
+\hypertarget{classphpMorphy_a7a4e83b1017ee422e96429a1bd6fd8f7}{
+\index{phpMorphy@{phpMorphy}!getBaseForm@{getBaseForm}}
+\index{getBaseForm@{getBaseForm}!phpMorphy@{phpMorphy}}
+\subsubsection[{getBaseForm}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getBaseForm (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a7a4e83b1017ee422e96429a1bd6fd8f7}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a75415fda8b50defd5b448197e2531c06}{
+\index{phpMorphy@{phpMorphy}!getBulkMorphier@{getBulkMorphier}}
+\index{getBulkMorphier@{getBulkMorphier}!phpMorphy@{phpMorphy}}
+\subsubsection[{getBulkMorphier}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getBulkMorphier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a75415fda8b50defd5b448197e2531c06}
+\begin{DoxyReturn}{Возвращает}
+\hyperlink{classphpMorphy__Morphier__Bulk}{phpMorphy\_\-Morphier\_\-Bulk} 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_ac204e610811ccb56dc8ac3b15836352c}{
+\index{phpMorphy@{phpMorphy}!getCommonMorphier@{getCommonMorphier}}
+\index{getCommonMorphier@{getCommonMorphier}!phpMorphy@{phpMorphy}}
+\subsubsection[{getCommonMorphier}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getCommonMorphier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_ac204e610811ccb56dc8ac3b15836352c}
+\begin{DoxyReturn}{Возвращает}
+\hyperlink{interfacephpMorphy__Morphier__Interface}{phpMorphy\_\-Morphier\_\-Interface} 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_af11804fd579bc168811d9bb1cfb8afff}{
+\index{phpMorphy@{phpMorphy}!getDbaHandlerName@{getDbaHandlerName}}
+\index{getDbaHandlerName@{getDbaHandlerName}!phpMorphy@{phpMorphy}}
+\subsubsection[{getDbaHandlerName}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getDbaHandlerName (
+\begin{DoxyParamCaption}
+\item[{\$}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_af11804fd579bc168811d9bb1cfb8afff}
+\hypertarget{classphpMorphy_abbafbd0a020b3d8ff51e1c6e25667a5e}{
+\index{phpMorphy@{phpMorphy}!getDefaultGrammemsProvider@{getDefaultGrammemsProvider}}
+\index{getDefaultGrammemsProvider@{getDefaultGrammemsProvider}!phpMorphy@{phpMorphy}}
+\subsubsection[{getDefaultGrammemsProvider}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getDefaultGrammemsProvider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_abbafbd0a020b3d8ff51e1c6e25667a5e}
+\begin{DoxyReturn}{Возвращает}
+\hyperlink{classphpMorphy__GrammemsProvider__Base}{phpMorphy\_\-GrammemsProvider\_\-Base} 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a25acea38c2d40849d3b4e98c41eea443}{
+\index{phpMorphy@{phpMorphy}!getEncoding@{getEncoding}}
+\index{getEncoding@{getEncoding}!phpMorphy@{phpMorphy}}
+\subsubsection[{getEncoding}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getEncoding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a25acea38c2d40849d3b4e98c41eea443}
+\begin{DoxyReturn}{Возвращает}
+string 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_ae69f1aa57ddaf885e08b9088829ba979}{
+\index{phpMorphy@{phpMorphy}!getGramInfo@{getGramInfo}}
+\index{getGramInfo@{getGramInfo}!phpMorphy@{phpMorphy}}
+\subsubsection[{getGramInfo}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getGramInfo (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_ae69f1aa57ddaf885e08b9088829ba979}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a1330731d198f4aef740f8b1226faa848}{
+\index{phpMorphy@{phpMorphy}!getGramInfoMergeForms@{getGramInfoMergeForms}}
+\index{getGramInfoMergeForms@{getGramInfoMergeForms}!phpMorphy@{phpMorphy}}
+\subsubsection[{getGramInfoMergeForms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getGramInfoMergeForms (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a1330731d198f4aef740f8b1226faa848}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a03ad597a07619294a843a7d3e1c7f66b}{
+\index{phpMorphy@{phpMorphy}!getGrammemsProvider@{getGrammemsProvider}}
+\index{getGrammemsProvider@{getGrammemsProvider}!phpMorphy@{phpMorphy}}
+\subsubsection[{getGrammemsProvider}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getGrammemsProvider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a03ad597a07619294a843a7d3e1c7f66b}
+\begin{DoxyReturn}{Возвращает}
+\hyperlink{classphpMorphy__GrammemsProvider__Base}{phpMorphy\_\-GrammemsProvider\_\-Base} 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a92b63c211019dca58e8e6d6de004756b}{
+\index{phpMorphy@{phpMorphy}!getLastPredictionType@{getLastPredictionType}}
+\index{getLastPredictionType@{getLastPredictionType}!phpMorphy@{phpMorphy}}
+\subsubsection[{getLastPredictionType}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getLastPredictionType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a92b63c211019dca58e8e6d6de004756b}
+\hypertarget{classphpMorphy_a7c522cd19ec8d9d537a56719d9e83780}{
+\index{phpMorphy@{phpMorphy}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!phpMorphy@{phpMorphy}}
+\subsubsection[{getLocale}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getLocale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a7c522cd19ec8d9d537a56719d9e83780}
+\begin{DoxyReturn}{Возвращает}
+string 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a561c76269a2b81be6757a20511ee60fb}{
+\index{phpMorphy@{phpMorphy}!getPartOfSpeech@{getPartOfSpeech}}
+\index{getPartOfSpeech@{getPartOfSpeech}!phpMorphy@{phpMorphy}}
+\subsubsection[{getPartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getPartOfSpeech (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a561c76269a2b81be6757a20511ee60fb}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_aefd19f95880f79f7f42a7ab2805aa188}{
+\index{phpMorphy@{phpMorphy}!getPredictByDatabaseMorphier@{getPredictByDatabaseMorphier}}
+\index{getPredictByDatabaseMorphier@{getPredictByDatabaseMorphier}!phpMorphy@{phpMorphy}}
+\subsubsection[{getPredictByDatabaseMorphier}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getPredictByDatabaseMorphier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_aefd19f95880f79f7f42a7ab2805aa188}
+\begin{DoxyReturn}{Возвращает}
+\hyperlink{interfacephpMorphy__Morphier__Interface}{phpMorphy\_\-Morphier\_\-Interface} 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a2b9f94dc327e179c72301a20e5f8198b}{
+\index{phpMorphy@{phpMorphy}!getPredictBySuffixMorphier@{getPredictBySuffixMorphier}}
+\index{getPredictBySuffixMorphier@{getPredictBySuffixMorphier}!phpMorphy@{phpMorphy}}
+\subsubsection[{getPredictBySuffixMorphier}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getPredictBySuffixMorphier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a2b9f94dc327e179c72301a20e5f8198b}
+\begin{DoxyReturn}{Возвращает}
+\hyperlink{interfacephpMorphy__Morphier__Interface}{phpMorphy\_\-Morphier\_\-Interface} 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a71545506bc0c9601b1e5d7d416f22956}{
+\index{phpMorphy@{phpMorphy}!getPseudoRoot@{getPseudoRoot}}
+\index{getPseudoRoot@{getPseudoRoot}!phpMorphy@{phpMorphy}}
+\subsubsection[{getPseudoRoot}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getPseudoRoot (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a71545506bc0c9601b1e5d7d416f22956}
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_a2ca6ddade65efffb106f2156c67bb66b}{
+\index{phpMorphy@{phpMorphy}!getShmCache@{getShmCache}}
+\index{getShmCache@{getShmCache}!phpMorphy@{phpMorphy}}
+\subsubsection[{getShmCache}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::getShmCache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_a2ca6ddade65efffb106f2156c67bb66b}
+\begin{DoxyReturn}{Возвращает}
+\hyperlink{classphpMorphy__Shm__Cache}{phpMorphy\_\-Shm\_\-Cache} 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_ae5eba4519ae7d1692314a785fea4d5fd}{
+\index{phpMorphy@{phpMorphy}!initNewStyle@{initNewStyle}}
+\index{initNewStyle@{initNewStyle}!phpMorphy@{phpMorphy}}
+\subsubsection[{initNewStyle}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::initNewStyle (
+\begin{DoxyParamCaption}
+\item[{phpMorphy\_\-FilesBundle \$}]{ bundle, }
+\item[{\$}]{ options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_ae5eba4519ae7d1692314a785fea4d5fd}
+\hypertarget{classphpMorphy_ab8d41deae8cbf5c7b378105c466e2faa}{
+\index{phpMorphy@{phpMorphy}!initOldStyle@{initOldStyle}}
+\index{initOldStyle@{initOldStyle}!phpMorphy@{phpMorphy}}
+\subsubsection[{initOldStyle}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::initOldStyle (
+\begin{DoxyParamCaption}
+\item[{phpMorphy\_\-FilesBundle \$}]{ bundle, }
+\item[{\$}]{ options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_ab8d41deae8cbf5c7b378105c466e2faa}
+\hypertarget{classphpMorphy_a5fce126e953fc4317a2ffe9c39fc01b7}{
+\index{phpMorphy@{phpMorphy}!invoke@{invoke}}
+\index{invoke@{invoke}!phpMorphy@{phpMorphy}}
+\subsubsection[{invoke}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::invoke (
+\begin{DoxyParamCaption}
+\item[{\$}]{ method, }
+\item[{\$}]{ word, }
+\item[{\$}]{ type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a5fce126e953fc4317a2ffe9c39fc01b7}
+\hypertarget{classphpMorphy_af19e83bcc40a6f547b60bc9c46be05eb}{
+\index{phpMorphy@{phpMorphy}!isLastPredicted@{isLastPredicted}}
+\index{isLastPredicted@{isLastPredicted}!phpMorphy@{phpMorphy}}
+\subsubsection[{isLastPredicted}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::isLastPredicted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_af19e83bcc40a6f547b60bc9c46be05eb}
+\begin{DoxyReturn}{Возвращает}
+bool 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_aefeaecaf9831657a570a28d8529be006}{
+\index{phpMorphy@{phpMorphy}!lemmatize@{lemmatize}}
+\index{lemmatize@{lemmatize}!phpMorphy@{phpMorphy}}
+\subsubsection[{lemmatize}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::lemmatize (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ type = {\ttfamily self::NORMAL}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy_aefeaecaf9831657a570a28d8529be006}
+Alias for getBaseForm
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em mixed}]\$word -\/ string or array of strings \item[{\em mixed}]\$type -\/ prediction managment \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+array 
+\end{DoxyReturn}
+\hypertarget{classphpMorphy_af055c5fae7f8de6c37a011e86594995f}{
+\index{phpMorphy@{phpMorphy}!predictWord@{predictWord}}
+\index{predictWord@{predictWord}!phpMorphy@{phpMorphy}}
+\subsubsection[{predictWord}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::predictWord (
+\begin{DoxyParamCaption}
+\item[{\$}]{ method, }
+\item[{\$}]{ word}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_af055c5fae7f8de6c37a011e86594995f}
+\hypertarget{classphpMorphy_aa9fc29c9fede88464b3696a20fb0ea7f}{
+\index{phpMorphy@{phpMorphy}!processWordsCollection@{processWordsCollection}}
+\index{processWordsCollection@{processWordsCollection}!phpMorphy@{phpMorphy}}
+\subsubsection[{processWordsCollection}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::processWordsCollection (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-WordDescriptor\_\-Collection} \$}]{ collection, }
+\item[{\$}]{ asText}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_aa9fc29c9fede88464b3696a20fb0ea7f}
+\hypertarget{classphpMorphy_a3ba28dac1c785398ae1a6c112a2f884e}{
+\index{phpMorphy@{phpMorphy}!repairOldOptions@{repairOldOptions}}
+\index{repairOldOptions@{repairOldOptions}!phpMorphy@{phpMorphy}}
+\subsubsection[{repairOldOptions}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::repairOldOptions (
+\begin{DoxyParamCaption}
+\item[{\$}]{ options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a3ba28dac1c785398ae1a6c112a2f884e}
+\hypertarget{classphpMorphy_a968bfb227dd3b721632b01d92d56f3b6}{
+\index{phpMorphy@{phpMorphy}!repairOptions@{repairOptions}}
+\index{repairOptions@{repairOptions}!phpMorphy@{phpMorphy}}
+\subsubsection[{repairOptions}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::repairOptions (
+\begin{DoxyParamCaption}
+\item[{\$}]{ options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a968bfb227dd3b721632b01d92d56f3b6}
+\hypertarget{classphpMorphy_ade6f92bfb7f236ca01a37c7ea3edba06}{
+\index{phpMorphy@{phpMorphy}!repairSourceOptions@{repairSourceOptions}}
+\index{repairSourceOptions@{repairSourceOptions}!phpMorphy@{phpMorphy}}
+\subsubsection[{repairSourceOptions}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::repairSourceOptions (
+\begin{DoxyParamCaption}
+\item[{\$}]{ options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_ade6f92bfb7f236ca01a37c7ea3edba06}
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy_a132dd5676856185b4a2a7b11cf112de4}{
+\index{phpMorphy@{phpMorphy}!\$common\_\-fsa@{\$common\_\-fsa}}
+\index{\$common\_\-fsa@{\$common\_\-fsa}!phpMorphy@{phpMorphy}}
+\subsubsection[{\$common\_\-fsa}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\$common\_\-fsa\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a132dd5676856185b4a2a7b11cf112de4}
+\hypertarget{classphpMorphy_a53dffe78d2981dfe4e82ba6df48629b9}{
+\index{phpMorphy@{phpMorphy}!\$common\_\-source@{\$common\_\-source}}
+\index{\$common\_\-source@{\$common\_\-source}!phpMorphy@{phpMorphy}}
+\subsubsection[{\$common\_\-source}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\$common\_\-source\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a53dffe78d2981dfe4e82ba6df48629b9}
+\hypertarget{classphpMorphy_a93e1e71ce6b401f349e7ff0f358af741}{
+\index{phpMorphy@{phpMorphy}!\$helper@{\$helper}}
+\index{\$helper@{\$helper}!phpMorphy@{phpMorphy}}
+\subsubsection[{\$helper}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\$helper\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a93e1e71ce6b401f349e7ff0f358af741}
+\hypertarget{classphpMorphy_acb23ae8a5be14476598268c8f48894f0}{
+\index{phpMorphy@{phpMorphy}!\$last\_\-prediction\_\-type@{\$last\_\-prediction\_\-type}}
+\index{\$last\_\-prediction\_\-type@{\$last\_\-prediction\_\-type}!phpMorphy@{phpMorphy}}
+\subsubsection[{\$last\_\-prediction\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\$last\_\-prediction\_\-type\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_acb23ae8a5be14476598268c8f48894f0}
+\hypertarget{classphpMorphy_a473b5901c47b7aa079e27d24d3da07af}{
+\index{phpMorphy@{phpMorphy}!\$options@{\$options}}
+\index{\$options@{\$options}!phpMorphy@{phpMorphy}}
+\subsubsection[{\$options}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\$options\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a473b5901c47b7aa079e27d24d3da07af}
+\hypertarget{classphpMorphy_a1c65e7268298d0c2a800fb5db637dce5}{
+\index{phpMorphy@{phpMorphy}!\$predict\_\-fsa@{\$predict\_\-fsa}}
+\index{\$predict\_\-fsa@{\$predict\_\-fsa}!phpMorphy@{phpMorphy}}
+\subsubsection[{\$predict\_\-fsa}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\$predict\_\-fsa\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_a1c65e7268298d0c2a800fb5db637dce5}
+\hypertarget{classphpMorphy_aeefc33700147a976cd183c09aaef36e2}{
+\index{phpMorphy@{phpMorphy}!\$storage\_\-factory@{\$storage\_\-factory}}
+\index{\$storage\_\-factory@{\$storage\_\-factory}!phpMorphy@{phpMorphy}}
+\subsubsection[{\$storage\_\-factory}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy::\$storage\_\-factory\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy_aeefc33700147a976cd183c09aaef36e2}
+\hypertarget{classphpMorphy_a96773a087cbcf69f52e1cddad0060c3d}{
+\index{phpMorphy@{phpMorphy}!IGNORE\_\-PREDICT@{IGNORE\_\-PREDICT}}
+\index{IGNORE\_\-PREDICT@{IGNORE\_\-PREDICT}!phpMorphy@{phpMorphy}}
+\subsubsection[{IGNORE\_\-PREDICT}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::IGNORE\_\-PREDICT} = 2}}
+\label{classphpMorphy_a96773a087cbcf69f52e1cddad0060c3d}
+\hypertarget{classphpMorphy_a8cfde1e320c3114a46b5a250cfa2c368}{
+\index{phpMorphy@{phpMorphy}!NORMAL@{NORMAL}}
+\index{NORMAL@{NORMAL}!phpMorphy@{phpMorphy}}
+\subsubsection[{NORMAL}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::NORMAL} = 0}}
+\label{classphpMorphy_a8cfde1e320c3114a46b5a250cfa2c368}
+\hypertarget{classphpMorphy_a2ab6f41bcb2c2bb31dd1f7f92f1b38ee}{
+\index{phpMorphy@{phpMorphy}!ONLY\_\-PREDICT@{ONLY\_\-PREDICT}}
+\index{ONLY\_\-PREDICT@{ONLY\_\-PREDICT}!phpMorphy@{phpMorphy}}
+\subsubsection[{ONLY\_\-PREDICT}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::ONLY\_\-PREDICT} = 3}}
+\label{classphpMorphy_a2ab6f41bcb2c2bb31dd1f7f92f1b38ee}
+\hypertarget{classphpMorphy_ada1e5f1e0eb2de867e273e23a4022955}{
+\index{phpMorphy@{phpMorphy}!PREDICT\_\-BY\_\-DB@{PREDICT\_\-BY\_\-DB}}
+\index{PREDICT\_\-BY\_\-DB@{PREDICT\_\-BY\_\-DB}!phpMorphy@{phpMorphy}}
+\subsubsection[{PREDICT\_\-BY\_\-DB}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::PREDICT\_\-BY\_\-DB} = 'by\_\-db'}}
+\label{classphpMorphy_ada1e5f1e0eb2de867e273e23a4022955}
+\hypertarget{classphpMorphy_a9359de1c31adfc1c10894cbead48e2ba}{
+\index{phpMorphy@{phpMorphy}!PREDICT\_\-BY\_\-NONE@{PREDICT\_\-BY\_\-NONE}}
+\index{PREDICT\_\-BY\_\-NONE@{PREDICT\_\-BY\_\-NONE}!phpMorphy@{phpMorphy}}
+\subsubsection[{PREDICT\_\-BY\_\-NONE}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::PREDICT\_\-BY\_\-NONE} = 'none'}}
+\label{classphpMorphy_a9359de1c31adfc1c10894cbead48e2ba}
+\hypertarget{classphpMorphy_a1c02f9420ccc29ac4e2f80bf3688994d}{
+\index{phpMorphy@{phpMorphy}!PREDICT\_\-BY\_\-SUFFIX@{PREDICT\_\-BY\_\-SUFFIX}}
+\index{PREDICT\_\-BY\_\-SUFFIX@{PREDICT\_\-BY\_\-SUFFIX}!phpMorphy@{phpMorphy}}
+\subsubsection[{PREDICT\_\-BY\_\-SUFFIX}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::PREDICT\_\-BY\_\-SUFFIX} = 'by\_\-suffix'}}
+\label{classphpMorphy_a1c02f9420ccc29ac4e2f80bf3688994d}
+\hypertarget{classphpMorphy_a9cfb01a8a056c9322e3bb3680a8b921c}{
+\index{phpMorphy@{phpMorphy}!RESOLVE\_\-ANCODES\_\-AS\_\-DIALING@{RESOLVE\_\-ANCODES\_\-AS\_\-DIALING}}
+\index{RESOLVE\_\-ANCODES\_\-AS\_\-DIALING@{RESOLVE\_\-ANCODES\_\-AS\_\-DIALING}!phpMorphy@{phpMorphy}}
+\subsubsection[{RESOLVE\_\-ANCODES\_\-AS\_\-DIALING}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::RESOLVE\_\-ANCODES\_\-AS\_\-DIALING} = 1}}
+\label{classphpMorphy_a9cfb01a8a056c9322e3bb3680a8b921c}
+\hypertarget{classphpMorphy_a7619b0422b061a198516617ab96673f2}{
+\index{phpMorphy@{phpMorphy}!RESOLVE\_\-ANCODES\_\-AS\_\-INT@{RESOLVE\_\-ANCODES\_\-AS\_\-INT}}
+\index{RESOLVE\_\-ANCODES\_\-AS\_\-INT@{RESOLVE\_\-ANCODES\_\-AS\_\-INT}!phpMorphy@{phpMorphy}}
+\subsubsection[{RESOLVE\_\-ANCODES\_\-AS\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::RESOLVE\_\-ANCODES\_\-AS\_\-INT} = 2}}
+\label{classphpMorphy_a7619b0422b061a198516617ab96673f2}
+\hypertarget{classphpMorphy_a919a599c76ec4bb2a5f284d9a1b0da2e}{
+\index{phpMorphy@{phpMorphy}!RESOLVE\_\-ANCODES\_\-AS\_\-TEXT@{RESOLVE\_\-ANCODES\_\-AS\_\-TEXT}}
+\index{RESOLVE\_\-ANCODES\_\-AS\_\-TEXT@{RESOLVE\_\-ANCODES\_\-AS\_\-TEXT}!phpMorphy@{phpMorphy}}
+\subsubsection[{RESOLVE\_\-ANCODES\_\-AS\_\-TEXT}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf phpMorphy::RESOLVE\_\-ANCODES\_\-AS\_\-TEXT} = 0}}
+\label{classphpMorphy_a919a599c76ec4bb2a5f284d9a1b0da2e}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{common_8php}{common.php}\end{DoxyCompactItemize}

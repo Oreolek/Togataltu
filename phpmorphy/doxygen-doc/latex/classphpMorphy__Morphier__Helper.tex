@@ -1,0 +1,487 @@
+\hypertarget{classphpMorphy__Morphier__Helper}{
+\section{Класс phpMorphy\_\-Morphier\_\-Helper}
+\label{classphpMorphy__Morphier__Helper}\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a0771671628e208ea076d9b05392a7048}{\_\-\_\-construct} (\hyperlink{interfacephpMorphy__GramInfo__Interace}{phpMorphy\_\-GramInfo\_\-Interace} \$graminfo, \hyperlink{interfacephpMorphy__GramTab__Interface}{phpMorphy\_\-GramTab\_\-Interface} \$gramtab, \hyperlink{interfacephpMorphy__AncodesResolver__Interface}{phpMorphy\_\-AncodesResolver\_\-Interface} \$ancodesResolver, \$resolvePartOfSpeech)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_aeba31a1df3969ca4cf32aa1ea90bdf95}{setAnnotDecoder} (\hyperlink{interfacephpMorphy__AnnotDecoder__Interface}{phpMorphy\_\-AnnotDecoder\_\-Interface} \$annotDecoder)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a8a9ac0d2390dddf2d71c17fa0a0d6b61}{getEndOfString} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a61b2f1e8e4618672ddb957225588b81b}{getCharSize} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_ab0c5bb043c2542996e43c9d3f30058a9}{hasAnnotDecoder} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_ac665d62c4633faeed3ae5e9d46d987c4}{getAnnotDecoder} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_afb18bfb4d51f6597562e4341042682fb}{getAncodesResolver} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_ad1172d439e8df03f97fbfde634aaf566}{getGramInfo} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_abdd34d64ed0ffe7bc349bcfeddbf1701}{getGramTab} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a245de8f75489ea42d6319b6e19d92381}{isResolvePartOfSpeech} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a94691a01bfa392e37aa91090a6c6fb30}{resolvePartOfSpeech} (\$posId)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_ad14f7c360ba87c49ed9dabd1a895a0e2}{getGrammems} (\$ancodeId)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_af61335943cd6e465772f0bc65204b1c9}{getGrammemsAndPartOfSpeech} (\$ancodeId)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_af7acbcfa0416f7a3f0017c521fb38377}{extractPartOfSpeech} (\$annot)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_abaf9eef8a6f5e41cadd3a8e1e34d0382}{getWordDescriptor} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a82b2d10c31275fef75bbbbd030e5c957}{getPartOfSpeech} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_ab8e48ada4590d5740871ec4220899156}{getBaseForm} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a427cce89fdc69a1a54b81f6944d0e9d2}{getPseudoRoot} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_afb0a9b0e2aa45ce11960cdc34aa22617}{getAllForms} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_aae69eb530d6625267ab308f84583d17f}{castFormByGramInfo} (\$word, \$annots, \$partOfSpeech, \$grammems, \$returnWords=false, \$callback=null)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_aa06fe4dd955bd34fc3ac2e25fb598255}{getAncode} (\$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a0705f64b5325fc3da177b3d9abdea666}{getGrammarInfoMergeForms} (\$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a6934903a4e1c473e3d68d9dc9d1c7a69}{getGrammarInfo} (\$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a02f745b38bf73de30192cf8d07c42e5b}{getAllFormsWithResolvedAncodes} (\$word, \$annots, \$resolveType= 'no\_\-resolve')
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a480392ee111774fe15ac68cb6b398174}{getAllFormsWithAncodes} (\$word, \$annots, \&\$foundFormNo=array())
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a8a0430e24458a3312ec814c1e9c761cd}{getAllAncodes} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_ac5ab60dc8ac6d1ad97676d9eb6277636}{decodeAnnot} (\$annotsRaw, \$withBase)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_ab60e0829f377388fe41f4fa36856d2ca}{includeGramTabConsts} ()
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a0c3e892b1c621ca67f0e3b0add8874d0}{getBaseAndPrefix} (\$word, \$cplen, \$plen, \$flen)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_aa0b6a64b09dc2995c2c2f13156706dcc}{composeBaseForms} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a685fbf26b4d9b2669d13e3e30e8ba1f1}{composeForms} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a00b3e60552e6852ad56dcbc6f37ad452}{composeFormsWithResolvedAncodes} (\$word, \$annots)
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a431dbb48e43c4c44c8ca8aec6340cb9a}{composeFormsWithAncodes} (\$word, \$annots, \&\$foundFormNo)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classphpMorphy__Morphier__Helper_a22915426ed9c279326d89028791937f2}{array\_\-unique} (\$array)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a161eae1e122573b4c3ebaf136f0265e6}{\$graminfo}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_af8b933c5269f4b067a024c55600c01ba}{\$annot\_\-decoder}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_abde294a685b30915cff08dd32bd2a2c6}{\$char\_\-size}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_af5c59000b5323b137555001c448da8f4}{\$ends}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_af04fce42bb731483c1f2d9ef825ff658}{\$gramtab}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a16ea161e8896853c42c3ee6668397c13}{\$ancodes\_\-resolver}
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a73079a526fb2c21cedd3f8067597e49c}{\$gramtab\_\-consts\_\-included} = false
+\item 
+\hyperlink{classphpMorphy__Morphier__Helper_a03d35907d83e749956ee0eefe238b119}{\$resolve\_\-pos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classphpMorphy__Morphier__Helper_a0771671628e208ea076d9b05392a7048}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-GramInfo\_\-Interace} \$}]{ graminfo, }
+\item[{{\bf phpMorphy\_\-GramTab\_\-Interface} \$}]{ gramtab, }
+\item[{{\bf phpMorphy\_\-AncodesResolver\_\-Interface} \$}]{ ancodesResolver, }
+\item[{\$}]{ resolvePartOfSpeech}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a0771671628e208ea076d9b05392a7048}
+
+
+\subsection{Методы}
+\hypertarget{classphpMorphy__Morphier__Helper_a22915426ed9c279326d89028791937f2}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!array\_\-unique@{array\_\-unique}}
+\index{array\_\-unique@{array\_\-unique}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{array\_\-unique}]{\setlength{\rightskip}{0pt plus 5cm}static phpMorphy\_\-Morphier\_\-Helper::array\_\-unique (
+\begin{DoxyParamCaption}
+\item[{\$}]{ array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a22915426ed9c279326d89028791937f2}
+\hypertarget{classphpMorphy__Morphier__Helper_aae69eb530d6625267ab308f84583d17f}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!castFormByGramInfo@{castFormByGramInfo}}
+\index{castFormByGramInfo@{castFormByGramInfo}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{castFormByGramInfo}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::castFormByGramInfo (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots, }
+\item[{\$}]{ partOfSpeech, }
+\item[{\$}]{ grammems, }
+\item[{\$}]{ returnWords = {\ttfamily false}, }
+\item[{\$}]{ callback = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_aae69eb530d6625267ab308f84583d17f}
+\hypertarget{classphpMorphy__Morphier__Helper_aa0b6a64b09dc2995c2c2f13156706dcc}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!composeBaseForms@{composeBaseForms}}
+\index{composeBaseForms@{composeBaseForms}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{composeBaseForms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::composeBaseForms (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_aa0b6a64b09dc2995c2c2f13156706dcc}
+\hypertarget{classphpMorphy__Morphier__Helper_a685fbf26b4d9b2669d13e3e30e8ba1f1}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!composeForms@{composeForms}}
+\index{composeForms@{composeForms}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{composeForms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::composeForms (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a685fbf26b4d9b2669d13e3e30e8ba1f1}
+\hypertarget{classphpMorphy__Morphier__Helper_a431dbb48e43c4c44c8ca8aec6340cb9a}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!composeFormsWithAncodes@{composeFormsWithAncodes}}
+\index{composeFormsWithAncodes@{composeFormsWithAncodes}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{composeFormsWithAncodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::composeFormsWithAncodes (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots, }
+\item[{\&\$}]{ foundFormNo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a431dbb48e43c4c44c8ca8aec6340cb9a}
+\hypertarget{classphpMorphy__Morphier__Helper_a00b3e60552e6852ad56dcbc6f37ad452}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!composeFormsWithResolvedAncodes@{composeFormsWithResolvedAncodes}}
+\index{composeFormsWithResolvedAncodes@{composeFormsWithResolvedAncodes}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{composeFormsWithResolvedAncodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::composeFormsWithResolvedAncodes (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a00b3e60552e6852ad56dcbc6f37ad452}
+\hypertarget{classphpMorphy__Morphier__Helper_ac5ab60dc8ac6d1ad97676d9eb6277636}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!decodeAnnot@{decodeAnnot}}
+\index{decodeAnnot@{decodeAnnot}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{decodeAnnot}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::decodeAnnot (
+\begin{DoxyParamCaption}
+\item[{\$}]{ annotsRaw, }
+\item[{\$}]{ withBase}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_ac5ab60dc8ac6d1ad97676d9eb6277636}
+\hypertarget{classphpMorphy__Morphier__Helper_af7acbcfa0416f7a3f0017c521fb38377}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!extractPartOfSpeech@{extractPartOfSpeech}}
+\index{extractPartOfSpeech@{extractPartOfSpeech}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{extractPartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::extractPartOfSpeech (
+\begin{DoxyParamCaption}
+\item[{\$}]{ annot}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_af7acbcfa0416f7a3f0017c521fb38377}
+\hypertarget{classphpMorphy__Morphier__Helper_a8a0430e24458a3312ec814c1e9c761cd}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getAllAncodes@{getAllAncodes}}
+\index{getAllAncodes@{getAllAncodes}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getAllAncodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getAllAncodes (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a8a0430e24458a3312ec814c1e9c761cd}
+\hypertarget{classphpMorphy__Morphier__Helper_afb0a9b0e2aa45ce11960cdc34aa22617}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getAllForms@{getAllForms}}
+\index{getAllForms@{getAllForms}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getAllForms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getAllForms (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_afb0a9b0e2aa45ce11960cdc34aa22617}
+\hypertarget{classphpMorphy__Morphier__Helper_a480392ee111774fe15ac68cb6b398174}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getAllFormsWithAncodes@{getAllFormsWithAncodes}}
+\index{getAllFormsWithAncodes@{getAllFormsWithAncodes}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getAllFormsWithAncodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getAllFormsWithAncodes (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots, }
+\item[{\&\$}]{ foundFormNo = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a480392ee111774fe15ac68cb6b398174}
+\hypertarget{classphpMorphy__Morphier__Helper_a02f745b38bf73de30192cf8d07c42e5b}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getAllFormsWithResolvedAncodes@{getAllFormsWithResolvedAncodes}}
+\index{getAllFormsWithResolvedAncodes@{getAllFormsWithResolvedAncodes}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getAllFormsWithResolvedAncodes}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getAllFormsWithResolvedAncodes (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots, }
+\item[{\$}]{ resolveType = {\ttfamily 'no\_\-resolve'}}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a02f745b38bf73de30192cf8d07c42e5b}
+\hypertarget{classphpMorphy__Morphier__Helper_aa06fe4dd955bd34fc3ac2e25fb598255}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getAncode@{getAncode}}
+\index{getAncode@{getAncode}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getAncode}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getAncode (
+\begin{DoxyParamCaption}
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_aa06fe4dd955bd34fc3ac2e25fb598255}
+\hypertarget{classphpMorphy__Morphier__Helper_afb18bfb4d51f6597562e4341042682fb}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getAncodesResolver@{getAncodesResolver}}
+\index{getAncodesResolver@{getAncodesResolver}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getAncodesResolver}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getAncodesResolver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_afb18bfb4d51f6597562e4341042682fb}
+\hypertarget{classphpMorphy__Morphier__Helper_ac665d62c4633faeed3ae5e9d46d987c4}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getAnnotDecoder@{getAnnotDecoder}}
+\index{getAnnotDecoder@{getAnnotDecoder}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getAnnotDecoder}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getAnnotDecoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_ac665d62c4633faeed3ae5e9d46d987c4}
+\hypertarget{classphpMorphy__Morphier__Helper_a0c3e892b1c621ca67f0e3b0add8874d0}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getBaseAndPrefix@{getBaseAndPrefix}}
+\index{getBaseAndPrefix@{getBaseAndPrefix}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getBaseAndPrefix}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getBaseAndPrefix (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ cplen, }
+\item[{\$}]{ plen, }
+\item[{\$}]{ flen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a0c3e892b1c621ca67f0e3b0add8874d0}
+\hypertarget{classphpMorphy__Morphier__Helper_ab8e48ada4590d5740871ec4220899156}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getBaseForm@{getBaseForm}}
+\index{getBaseForm@{getBaseForm}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getBaseForm}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getBaseForm (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_ab8e48ada4590d5740871ec4220899156}
+\hypertarget{classphpMorphy__Morphier__Helper_a61b2f1e8e4618672ddb957225588b81b}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getCharSize@{getCharSize}}
+\index{getCharSize@{getCharSize}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getCharSize}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getCharSize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a61b2f1e8e4618672ddb957225588b81b}
+\hypertarget{classphpMorphy__Morphier__Helper_a8a9ac0d2390dddf2d71c17fa0a0d6b61}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getEndOfString@{getEndOfString}}
+\index{getEndOfString@{getEndOfString}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getEndOfString}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getEndOfString (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a8a9ac0d2390dddf2d71c17fa0a0d6b61}
+\hypertarget{classphpMorphy__Morphier__Helper_ad1172d439e8df03f97fbfde634aaf566}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getGramInfo@{getGramInfo}}
+\index{getGramInfo@{getGramInfo}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getGramInfo}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getGramInfo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_ad1172d439e8df03f97fbfde634aaf566}
+\hypertarget{classphpMorphy__Morphier__Helper_a6934903a4e1c473e3d68d9dc9d1c7a69}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getGrammarInfo@{getGrammarInfo}}
+\index{getGrammarInfo@{getGrammarInfo}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getGrammarInfo}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getGrammarInfo (
+\begin{DoxyParamCaption}
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a6934903a4e1c473e3d68d9dc9d1c7a69}
+\hypertarget{classphpMorphy__Morphier__Helper_a0705f64b5325fc3da177b3d9abdea666}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getGrammarInfoMergeForms@{getGrammarInfoMergeForms}}
+\index{getGrammarInfoMergeForms@{getGrammarInfoMergeForms}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getGrammarInfoMergeForms}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getGrammarInfoMergeForms (
+\begin{DoxyParamCaption}
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a0705f64b5325fc3da177b3d9abdea666}
+\hypertarget{classphpMorphy__Morphier__Helper_ad14f7c360ba87c49ed9dabd1a895a0e2}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getGrammems@{getGrammems}}
+\index{getGrammems@{getGrammems}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getGrammems}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getGrammems (
+\begin{DoxyParamCaption}
+\item[{\$}]{ ancodeId}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_ad14f7c360ba87c49ed9dabd1a895a0e2}
+\hypertarget{classphpMorphy__Morphier__Helper_af61335943cd6e465772f0bc65204b1c9}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getGrammemsAndPartOfSpeech@{getGrammemsAndPartOfSpeech}}
+\index{getGrammemsAndPartOfSpeech@{getGrammemsAndPartOfSpeech}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getGrammemsAndPartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getGrammemsAndPartOfSpeech (
+\begin{DoxyParamCaption}
+\item[{\$}]{ ancodeId}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_af61335943cd6e465772f0bc65204b1c9}
+\hypertarget{classphpMorphy__Morphier__Helper_abdd34d64ed0ffe7bc349bcfeddbf1701}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getGramTab@{getGramTab}}
+\index{getGramTab@{getGramTab}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getGramTab}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getGramTab (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_abdd34d64ed0ffe7bc349bcfeddbf1701}
+\hypertarget{classphpMorphy__Morphier__Helper_a82b2d10c31275fef75bbbbd030e5c957}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getPartOfSpeech@{getPartOfSpeech}}
+\index{getPartOfSpeech@{getPartOfSpeech}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getPartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getPartOfSpeech (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a82b2d10c31275fef75bbbbd030e5c957}
+\hypertarget{classphpMorphy__Morphier__Helper_a427cce89fdc69a1a54b81f6944d0e9d2}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getPseudoRoot@{getPseudoRoot}}
+\index{getPseudoRoot@{getPseudoRoot}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getPseudoRoot}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getPseudoRoot (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a427cce89fdc69a1a54b81f6944d0e9d2}
+\hypertarget{classphpMorphy__Morphier__Helper_abaf9eef8a6f5e41cadd3a8e1e34d0382}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!getWordDescriptor@{getWordDescriptor}}
+\index{getWordDescriptor@{getWordDescriptor}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{getWordDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::getWordDescriptor (
+\begin{DoxyParamCaption}
+\item[{\$}]{ word, }
+\item[{\$}]{ annots}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_abaf9eef8a6f5e41cadd3a8e1e34d0382}
+\hypertarget{classphpMorphy__Morphier__Helper_ab0c5bb043c2542996e43c9d3f30058a9}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!hasAnnotDecoder@{hasAnnotDecoder}}
+\index{hasAnnotDecoder@{hasAnnotDecoder}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{hasAnnotDecoder}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::hasAnnotDecoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_ab0c5bb043c2542996e43c9d3f30058a9}
+\hypertarget{classphpMorphy__Morphier__Helper_ab60e0829f377388fe41f4fa36856d2ca}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!includeGramTabConsts@{includeGramTabConsts}}
+\index{includeGramTabConsts@{includeGramTabConsts}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{includeGramTabConsts}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::includeGramTabConsts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_ab60e0829f377388fe41f4fa36856d2ca}
+\hypertarget{classphpMorphy__Morphier__Helper_a245de8f75489ea42d6319b6e19d92381}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!isResolvePartOfSpeech@{isResolvePartOfSpeech}}
+\index{isResolvePartOfSpeech@{isResolvePartOfSpeech}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{isResolvePartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::isResolvePartOfSpeech (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a245de8f75489ea42d6319b6e19d92381}
+\hypertarget{classphpMorphy__Morphier__Helper_a94691a01bfa392e37aa91090a6c6fb30}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!resolvePartOfSpeech@{resolvePartOfSpeech}}
+\index{resolvePartOfSpeech@{resolvePartOfSpeech}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{resolvePartOfSpeech}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::resolvePartOfSpeech (
+\begin{DoxyParamCaption}
+\item[{\$}]{ posId}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_a94691a01bfa392e37aa91090a6c6fb30}
+\hypertarget{classphpMorphy__Morphier__Helper_aeba31a1df3969ca4cf32aa1ea90bdf95}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!setAnnotDecoder@{setAnnotDecoder}}
+\index{setAnnotDecoder@{setAnnotDecoder}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{setAnnotDecoder}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::setAnnotDecoder (
+\begin{DoxyParamCaption}
+\item[{{\bf phpMorphy\_\-AnnotDecoder\_\-Interface} \$}]{ annotDecoder}
+\end{DoxyParamCaption}
+)}}
+\label{classphpMorphy__Morphier__Helper_aeba31a1df3969ca4cf32aa1ea90bdf95}
+
+
+\subsection{Данные класса}
+\hypertarget{classphpMorphy__Morphier__Helper_a16ea161e8896853c42c3ee6668397c13}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\$ancodes\_\-resolver@{\$ancodes\_\-resolver}}
+\index{\$ancodes\_\-resolver@{\$ancodes\_\-resolver}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\$ancodes\_\-resolver}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\$ancodes\_\-resolver\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a16ea161e8896853c42c3ee6668397c13}
+\hypertarget{classphpMorphy__Morphier__Helper_af8b933c5269f4b067a024c55600c01ba}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\$annot\_\-decoder@{\$annot\_\-decoder}}
+\index{\$annot\_\-decoder@{\$annot\_\-decoder}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\$annot\_\-decoder}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\$annot\_\-decoder\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_af8b933c5269f4b067a024c55600c01ba}
+\hypertarget{classphpMorphy__Morphier__Helper_abde294a685b30915cff08dd32bd2a2c6}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\$char\_\-size@{\$char\_\-size}}
+\index{\$char\_\-size@{\$char\_\-size}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\$char\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\$char\_\-size\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_abde294a685b30915cff08dd32bd2a2c6}
+\hypertarget{classphpMorphy__Morphier__Helper_af5c59000b5323b137555001c448da8f4}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\$ends@{\$ends}}
+\index{\$ends@{\$ends}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\$ends}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\$ends\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_af5c59000b5323b137555001c448da8f4}
+\hypertarget{classphpMorphy__Morphier__Helper_a161eae1e122573b4c3ebaf136f0265e6}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\$graminfo@{\$graminfo}}
+\index{\$graminfo@{\$graminfo}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\$graminfo}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\$graminfo\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a161eae1e122573b4c3ebaf136f0265e6}
+\hypertarget{classphpMorphy__Morphier__Helper_af04fce42bb731483c1f2d9ef825ff658}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\$gramtab@{\$gramtab}}
+\index{\$gramtab@{\$gramtab}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\$gramtab}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\$gramtab\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_af04fce42bb731483c1f2d9ef825ff658}
+\hypertarget{classphpMorphy__Morphier__Helper_a73079a526fb2c21cedd3f8067597e49c}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\$gramtab\_\-consts\_\-included@{\$gramtab\_\-consts\_\-included}}
+\index{\$gramtab\_\-consts\_\-included@{\$gramtab\_\-consts\_\-included}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\$gramtab\_\-consts\_\-included}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\$gramtab\_\-consts\_\-included = false\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a73079a526fb2c21cedd3f8067597e49c}
+\hypertarget{classphpMorphy__Morphier__Helper_a03d35907d83e749956ee0eefe238b119}{
+\index{phpMorphy\_\-Morphier\_\-Helper@{phpMorphy\_\-Morphier\_\-Helper}!\$resolve\_\-pos@{\$resolve\_\-pos}}
+\index{\$resolve\_\-pos@{\$resolve\_\-pos}!phpMorphy_Morphier_Helper@{phpMorphy\_\-Morphier\_\-Helper}}
+\subsubsection[{\$resolve\_\-pos}]{\setlength{\rightskip}{0pt plus 5cm}phpMorphy\_\-Morphier\_\-Helper::\$resolve\_\-pos\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classphpMorphy__Morphier__Helper_a03d35907d83e749956ee0eefe238b119}
+
+
+Объявления и описания членов класса находятся в файле:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{morphiers_8php}{morphiers.php}\end{DoxyCompactItemize}
